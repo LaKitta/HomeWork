@@ -1,0 +1,467 @@
+  /begin MEASUREMENT LuSOC_EEInChgFullLast_flg "初始化上次充电结束状态"
+      UBYTE NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000d109
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInChgFullLast_flg" 0x7000d109 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInChgFullLast_flg" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInBattDchCVLim_enum "初始化上次放电阶段状态"
+      UBYTE NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000d107
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInBattDchCVLim_enum" 0x7000d107 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInBattDchCVLim_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInBattDisChrgDnOff_flg "初始化上次放电降功率状态"
+      UBYTE NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000d108
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInBattDisChrgDnOff_flg" 0x7000d108 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInBattDisChrgDnOff_flg" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInStatOCVDiffCV_enum "初始化静态一致性修正系数"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000cdbc
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInStatOCVDiffCV_enum" 0x7000cdbc 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInStatOCVDiffCV_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInChgDiffCV_enum "初始化充电一致性修正系数"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000cdb4
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInChgDiffCV_enum" 0x7000cdb4 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInChgDiffCV_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInBattChgEnLast_enum "初始化上次下电状态(充电或行车)"
+      UBYTE NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000d106
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInBattChgEnLast_enum" 0x7000d106 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInBattChgEnLast_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInfacChgFullDiff_enum "初始化充电电流容量修正系数"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000cdc2
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInfacChgFullDiff_enum" 0x7000cdc2 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInfacChgFullDiff_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInCheckCode_enum "初始化CheckCode"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000cdb2
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInCheckCode_enum" 0x7000cdb2 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInCheckCode_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInSOCTempMax_pct "初始化当前温度上限SOC"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000cdb8
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInSOCTempMax_pct" 0x7000cdb8 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInSOCTempMax_pct" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInSOCTempMin_pct "初始化当前温度下限SOC"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000cdba
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInSOCTempMin_pct" 0x7000cdba 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInSOCTempMin_pct" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInfacTempCp_enum "初始化温度容量修正系数"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000cdc6
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInfacTempCp_enum" 0x7000cdc6 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInfacTempCp_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LeSOC_EepromErr_enum "EE故障标志位"
+      UBYTE NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000d0f9
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LeSOC_EepromErr_enum" 0x7000d0f9 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LeSOC_EepromErr_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInpActSOC_pct "EE读取的真实SOC"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000cdc8
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInpActSOC_pct" 0x7000cdc8 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInpActSOC_pct" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LlSOC_EEInpAvlbCpAct_Ah "EE读取的真实可用容量"
+      ULONG NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000c77c
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LlSOC_EEInpAvlbCpAct_Ah" 0x7000c77c 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LlSOC_EEInpAvlbCpAct_Ah" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInpDispSOC_pct "EE读取的显示SOC"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000ced2
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInpDispSOC_pct" 0x7000ced2 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInpDispSOC_pct" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LlSOC_EEInpBattAvlbCp_Ah "EE读取的显示可用容量"
+      ULONG NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000c780
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LlSOC_EEInpBattAvlbCp_Ah" 0x7000c780 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LlSOC_EEInpBattAvlbCp_Ah" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LlSOC_EEInpBattRatedCp_Ah "EE读取的显示额定容量"
+      ULONG NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000c788
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LlSOC_EEInpBattRatedCp_Ah" 0x7000c788 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LlSOC_EEInpBattRatedCp_Ah" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LlSOC_EEInpBattChgRatedCp_Ah "EE读取的显示充电额定容量"
+      ULONG NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000c784
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LlSOC_EEInpBattChgRatedCp_Ah" 0x7000c784 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LlSOC_EEInpBattChgRatedCp_Ah" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInpfacBattDiff_enum "EE读取的一致性容量修正系数"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000cedc
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInpfacBattDiff_enum" 0x7000cedc 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInpfacBattDiff_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInpfacDchOCV_enum "EE读取的放电OCV修正系数"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000cee0
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInpfacDchOCV_enum" 0x7000cee0 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInpfacDchOCV_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInpfacBattDchDiff_enum "EE读取的放电一致性修正系数"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000ceda
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInpfacBattDchDiff_enum" 0x7000ceda 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInpfacBattDchDiff_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInpChgFullLast_flg "EE读取的上次充电结束状态"
+      UBYTE NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000d10d
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInpChgFullLast_flg" 0x7000d10d 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInpChgFullLast_flg" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInpBattDchCVLim_enum "EE读取的上次放电阶段状态"
+      UBYTE NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000d10b
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInpBattDchCVLim_enum" 0x7000d10b 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInpBattDchCVLim_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInpBattDisChrgDnOff_flg "EE读取的上次放电降功率状态"
+      UBYTE NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000d10c
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInpBattDisChrgDnOff_flg" 0x7000d10c 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInpBattDisChrgDnOff_flg" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInpStatOCVDiffCV_enum "EE读取的静态一致性修正系数"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000ced8
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInpStatOCVDiffCV_enum" 0x7000ced8 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInpStatOCVDiffCV_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInpChgDiffCV_enum "EE读取的充电一致性修正系数"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000ced0
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInpChgDiffCV_enum" 0x7000ced0 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInpChgDiffCV_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInpBattChgEnLast_enum "EE读取的上次下电状态(充电或行车)"
+      UBYTE NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000d10a
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInpBattChgEnLast_enum" 0x7000d10a 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInpBattChgEnLast_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInpfacChgFullDiff_enum "EE读取的充电电流容量修正系数"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000cede
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInpfacChgFullDiff_enum" 0x7000cede 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInpfacChgFullDiff_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInpCheckCode_enum "EE读取的CheckCode"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000cece
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInpCheckCode_enum" 0x7000cece 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInpCheckCode_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInpSOCTempMax_pct "EE读取的当前温度上限SOC"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000ced4
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInpSOCTempMax_pct" 0x7000ced4 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInpSOCTempMax_pct" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInpSOCTempMin_pct "EE读取的当前温度下限SOC"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000ced6
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInpSOCTempMin_pct" 0x7000ced6 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInpSOCTempMin_pct" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LuSOC_EEInpfacTempCp_enum "EE读取的温度容量修正系数"
+      UWORD NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000cee2
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LuSOC_EEInpfacTempCp_enum" 0x7000cee2 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LuSOC_EEInpfacTempCp_enum" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LeSOC_TempMaxRaw_degC "单体电芯最高温度CCP"
+      UBYTE NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000d0fe
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LeSOC_TempMaxRaw_degC" 0x7000d0fe 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LeSOC_TempMaxRaw_degC" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LbSOC_TempMaxErr_flg "SOC最高温度异常标志位"
+      UBYTE NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000d006
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LbSOC_TempMaxErr_flg" 0x7000d006 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LbSOC_TempMaxErr_flg" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LeSOC_TempMax_degC "SOC最高温度"
+      UBYTE NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000d0ff
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LeSOC_TempMax_degC" 0x7000d0ff 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LeSOC_TempMax_degC" 0
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LeSOC_TempMinRaw_degC "单体电芯最低温度CCP"
+      UBYTE NO_COMPU_METHOD 0 0 0 1
+      ECU_ADDRESS 0x7000d100
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.15"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LeSOC_TempMinRaw_degC" 0x7000d100 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 1
+      /end IF_DATA
+      SYMBOL_LINK "LeSOC_TempMinRaw_degC" 0
+    /end MEASUREMENT

@@ -1,0 +1,35 @@
+<script>
+    // Setup
+    var collection = {
+      2548: {
+        albumTitle: "Slippery When Wet",
+        artist: "Bon Jovi",
+        tracks: ["Let It Rock", "You Give Love a Bad Name"],
+      }
+    };
+  
+    // Only change code below this line
+    /*
+    function updateRecords(object, id, prop, value) {
+      if (prop != "tracks" && value) object.id[prop] = value;
+      if (prop == "tracls" && obj.id.hasOwnProperty("tracks"))
+        object.id[prop] = [value];
+      if (prop == "tracks" && value) object.id[prop].push(value);
+      if (!value) delete objeect.id[prop];
+      return object;
+    }
+  */
+
+    //updateRecords(collection, 5439, "artist", "ABBA");
+    //collection[5439]["artist"] = "ABBA";
+    //collection, 2548, "artist", ""
+    var value = "take a chance on me";
+    var prop = "tracks";
+    if ( prop == "tracks" && value) collection[2548]["tracks"].push(value);
+
+
+
+  
+    console.log(collection);
+  </script>
+  

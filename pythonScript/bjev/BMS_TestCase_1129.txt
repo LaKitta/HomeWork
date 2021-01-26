@@ -1,0 +1,316 @@
+		Test Level:	Need to decide	"
+Test Case Specification"																															
+		Test Type:	Functional Testing																																
+Test Case ID		Test Case Name	Test Steps	Expected Value	Free Comment	"
+Author Name
+"	Test Case Verdict	Requirement Traceability																											
+ID-BMS-001	Test Case	Insulation detection initialization function check	Check if the insulation detection initialization function follow the definition		Resource:绝缘检测功能定义1-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg!=1																																
+	Test Step		Read insulation resistance from positive to GND VfELHPN_Rneg_O	VfELHPN_Rneg_O=KfELHPN_RMaskRout_O																															
+	Test Step		Read insulation resistance from negative to GND Read VfELHPN_Rpos_O	VfELHPN_Rpos_O=KfELHPN_RMaskRout_O																															
+	Test Step		Read DTC	No error																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-002	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义2-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		动力电池正极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from positive to GND signal name not found)= KfELHPN_RMaskRThreshould_O+1 and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read insulation resistance from positive to GND VfELHPN_Rneg_O	VfELHPN_Rneg_O=KfELHPN_RMaskRout_O																															
+	Test Step		Read DTC	No error																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-003	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义2-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal not found)= KfELHPN_RMaskRThreshould_O+1 and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read insulation resistance from negative to GND VfELHPN_Rpos_O	VfELHPN_Rpos_O=KfELHPN_RMaskRout_O																															
+	Test Step		Read DTC	No error																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-004	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义2-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		动力电池正极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from positive to GND signal name not found)= KfELHPN_RMaskRThreshould_O-1 and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read insulation resistance from positive to GND VfELHPN_Rneg_O	VfELHPN_Rneg_O=动力电池正极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from positive to GND signal name not found)*（1±15%)																															
+	Test Step		Read DTC	No error																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-005	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义2-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal not found)= KfELHPN_RMaskRThreshould_O-1 and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read insulation resistance from negative to GND VfELHPN_Rpos_O	VfELHPN_Rpos_O=动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal name not found)*（1±15%)																															
+	Test Step		Read DTC	No error																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-006	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义3-2		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection error flag form ground floor VbHLD_BCUIsoChnlError_flg=1																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattIns ulChk Flt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-007	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义3-2		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection error flag form ground floor VbHLD_BCUIsoChnlError_flg=0																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattInsulChkFlt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-008	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		State(in 绝缘检测功能定义4-1 VCU_214_VEH_STATE?)==170																																
+	Stimulation		动力电池正极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from positive to GND signal name not found)= KfELHPN_FCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattIns ulChk Flt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-009	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		State(in 绝缘检测功能定义4-1 VCU_214_VEH_STATE?)==170																																
+	Stimulation		动力电池正极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from positive to GND signal name not found)= KfELHPN_FCHStaRMask_O+1 and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattInsulChkFlt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-010	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		State(in 绝缘检测功能定义4-1 VCU_214_VEH_STATE?)==170																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal name not found)= KfELHPN_FCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattIns ulChk Flt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-011	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		State(in 绝缘检测功能定义4-1 VCU_214_VEH_STATE?)==170																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal name not found)= KfELHPN_FCHStaRMask_O+1 and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattInsulChkFlt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-012	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		State(in 绝缘检测功能定义4-1 VCU_214_VEH_STATE?)==30																																
+	Stimulation		动力电池正极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from positive to GND signal name not found)= KfELHPN_NFCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattIns ulChk Flt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-013	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		State(in 绝缘检测功能定义4-1 VCU_214_VEH_STATE?)==30																																
+	Stimulation		动力电池正极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from positive to GND signal name not found)= KfELHPN_NFCHStaRMask_O+1 and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattInsulChkFlt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-014	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		State(in 绝缘检测功能定义4-1 VCU_214_VEH_STATE?)==30																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal name not found)= KfELHPN_NFCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattInsulChkFlt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-015	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		State(in 绝缘检测功能定义4-1 VCU_214_VEH_STATE?)==30																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal name not found)= KfELHPN_NFCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattInsulChkFlt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-016	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		State(in 绝缘检测功能定义4-1 VCU_214_VEH_STATE?)==110																																
+	Stimulation		动力电池正极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from positive to GND signal name not found)= KfELHPN_NFCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattIns ulChk Flt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-017	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		State(in 绝缘检测功能定义4-1 VCU_214_VEH_STATE?)==110																																
+	Stimulation		动力电池正极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from positive to GND signal name not found)= KfELHPN_NFCHStaRMask_O+1 and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattInsulChkFlt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-018	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		State(in 绝缘检测功能定义4-1 VCU_214_VEH_STATE?)==110																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal name not found)= KfELHPN_NFCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattIns ulChk Flt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-019	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		State(in 绝缘检测功能定义4-1 VCU_214_VEH_STATE?)==110																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal name not found)= KfELHPN_NFCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattInsulChkFlt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-020	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		State(in 绝缘检测功能定义4-1 VCU_214_VEH_STATE?)==100																																
+	Stimulation		动力电池正极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from positive to GND signal name not found)= KfELHPN_NFCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattIns ulChk Flt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-021	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		State(in 绝缘检测功能定义4-1 VCU_214_VEH_STATE?)==100																																
+	Stimulation		动力电池正极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from positive to GND signal name not found)= KfELHPN_NFCHStaRMask_O+1 and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattInsulChkFlt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-022	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		State(in 绝缘检测功能定义4-1 VCU_214_VEH_STATE?)==100																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal name not found)= KfELHPN_NFCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattIns ulChk Flt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-023	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		State(in 绝缘检测功能定义4-1 VCU_214_VEH_STATE?)==100																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal name not found)= KfELHPN_NFCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattInsulChkFlt=1																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-024	Test Case	Error reaction of Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1 & 绝缘检测功能定义		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		VCU_VehMod=0x2																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal name not found)= KfELHPN_NFCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattInsulChkFlt=1																															
+	Test Step		Read VCU_VehFltProcLvl	VCU_VehFltProcLvl=0x6																															
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-025	Test Case	Error reaction of Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1 & 绝缘检测功能定义		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		VCU_VehMod=0x3																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal name not found)= KfELHPN_NFCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattInsulChkFlt=1																															
+	Test Step		Read VCU_VehFltProcLvl	VCU_VehFltProcLvl=0x6																															
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-026	Test Case	Error reaction of Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1 & 绝缘检测功能定义		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		VCU_VehMod=0x4																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal name not found)= KfELHPN_NFCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattInsulChkFlt=1																															
+	Test Step		Read VCU_VehFltProcLvl	VCU_VehFltProcLvl=0x1																															
+	Test Step		check contactor state after 5s	main contactor is open																															
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-027	Test Case	Error reaction of Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1 & 绝缘检测功能定义		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		VCU_VehMod=0x5																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal name not found)= KfELHPN_NFCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattInsulChkFlt=1																															
+	Test Step		Read VCU_VehFltProcLvl	VCU_VehFltProcLvl=0x1																															
+	Test Step		check contactor state after 5s	main contactor is open																															
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-028	Test Case	Error reaction of Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1 & 绝缘检测功能定义		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		VCU_VehMod=0x7																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal name not found)= KfELHPN_NFCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattInsulChkFlt=1																															
+	Test Step		Read VCU_VehFltProcLvl	VCU_VehFltProcLvl=0x1																															
+	Test Step		check contactor state after 5s	main contactor is open																															
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-029	Test Case	Error reaction of Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1 & 绝缘检测功能定义		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		VCU_VehMod=0x1																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal name not found)= KfELHPN_NFCHStaRMask_O and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read Insulation detection error flag form EVBUS( BMS_PwrBattIns ulChk Flt?)	BMS_PwrBattInsulChkFlt=1																															
+	Test Step		Read VCU_VehFltProcLvl	VCU_VehFltProcLvl=0x1																															
+	Test Step		check contactor state after 5s	main contactor is open																															
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-030	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义4-1 & 绝缘检测功能定义		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		动力电池正极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from positive to GND signal name not found)= KfELHPN_RMaskRThreshould_O-1 and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read insulation resistance from positive to GND VfELHPN_Rneg_O	VfELHPN_Rneg_O<动力电池正极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from positive to GND signal name not found)																															
+	Test Step		Read DTC	No error																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															
+ID-BMS-031	Test Case	Insulation detection function check	Check if the insulation detection function follow the definition		Resource:绝缘检测功能定义2-1		Not Tested	Experience Based																											
+	Precondition		Ignition On																																
+	Precondition		Clear all the DTC's																																
+	Precondition		Ensure no battery derating or other errors in the system																																
+	Stimulation		Insulation detection command LbELHPN_BatIsoTestCmd_flg==1																																
+	Stimulation		动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal not found)= KfELHPN_RMaskRThreshould_O-1 and continue for KuELHPN_FiltWaitT_enum																																
+	Test Step		Read insulation resistance from negative to GND VfELHPN_Rpos_O	VfELHPN_Rpos_O<动力电池负极对GND绝缘电阻真实输入（硬线） (real hardwire insulation resistance from negative to GND signal name not found)																															
+	Test Step		Read DTC	No error																															
+	Postcondition		Clear the fault memory																																
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																															

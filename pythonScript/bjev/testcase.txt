@@ -1,0 +1,924 @@
+		Test Level:	Need to decide	"
+Test Case Specification"																																																			
+		Test Type:	Functional Testing																																																				
+Test Case ID		Test Case Name	Test Steps	Expected Value	iput	feedback	Free Comment	"
+Author Name
+"	Test Case Verdict	Requirement Traceability																																													
+FT-BMS-001	Test Case	PowerUp: Basic wakeup functionality of BMS ECU	Verify that BMS ECU is waking up with wakeup signal low to high					Karthik	Not Tested	Experience Based																																													
+	Precondition		Ignition OFF				Vehicle ignition is OFF																																																
+	Precondition		Remove the wakeup signal to BMS ECU																																																				
+	Precondition		Make sure the Gear Position is set to Neutral																																																				
+	Test Step		Turn ON ignition 				Vehicle ignition is turned ON																																																
+	Test Step		Read the mode of BMS ECU	BMS should not communicate																																																			
+	Stimulation		Provide wakeup signal to BMS ECU				"If hardwired: Provide using BoB
+If CAN/internal signal provide it using respective tools(Canoe/INCA)"																																																
+	Test Step		Read the mode of BMS ECU	BMS should communicate and should be in initialisation mode.			Label from a2l/CAN file																																																
+	Test Step		Read DTC																																																				
+	Post condition		Clear the fault memory																																																				
+	Post condition		Ignition  OFF																																																				
+FT-BMS-002	Test Case	PowerDown: Basic Sleep functionality of BMS ECU	Verify that BMS ECU sleep functionality with wakeup signal removed					Karthik	Not Tested	Experience Based																																													
+		Make sure the Gear Position is set to Neutral		无操作	无操作																																																	
+	Precondition		Ignition On		钥匙开关-》ON	整车state状态-》30																																																	
+	Precondition		Clear all the DTC's		无操作	无操作																																																	
+	Precondition		Ensure no battery derating or other errors in the system		无操作	动力电池系统故障显示 -》 正常	Label from a2l/CAN file																																																
+	Test Step		Read the mode of BMS ECU	BMS should be communicating & run mode	无操作	BMS初始化状态-》初始化完成																																																	
+	Stimulation		Remove wakeup signal to BMS ECU																																																				
+	Test Step		Read the mode of BMS ECU	BMS ECU shall go to sleep mode in [TBD] secs			"Label from a2l/CAN file
+TBD  as per system designed by the customer"																																																
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-003	Test Case	PowerUp: Positive Terminal Low Isolation Resistance 	BMS reaction in case of low isolation resistance at +ve terminal of HV Battery during BMS power-up					Karthik	Not Tested	Experience Based																																													
+	Precondition		Make sure the Gear Position is set to Neutral		无操作	无操作																																																	
+	Precondition		Ignition OFF		钥匙开关-》OFF																																																		
+	Stimulation		Connect low resistance path from High voltage + ve terminal to vehicle chassis ground																																																				
+	Test Step		Measure the effective resistance between chassis & +ve terminal	Effective resistance between chassis & HV +ve should  be less than [200kohm] ohms for isolation fault to be triggered			[TBD] value is defined/given by the customer																																																
+	Test Step		Ignition ON																																																				
+	Test Step		Read mode of BMS ECU	BMS ECU shall register low isolation in [TBD] secs & ECU goes to safety mode			[TBD] time should be as low as possible for safety purpose																																																
+	Test Step		Read DTC	DTC regarding low isolation shall be registered.																																																			
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF																																																				
+																																																							
+FT-BMS-004	Test Case	PowerUp: Negative Terminal Low Isolation Resistance 	BMS reaction of low isolation resistance at -ve terminal of HV Battery during BMS power-up					Karthik	Not Tested	Experience Based																																													
+	Precondition		Make sure the Gear Position is set to Neutral																																																				
+	Precondition		Ignition OFF																																																				
+	Stimulation		Connect low resistance path from High voltage - ve terminal to vehicle chassis ground																																																				
+	Test Step		Measure the effective resistance between chassis & -ve terminal	Effective resistance between chassis & HV -ve should  be less than [200kohm] ohms for isolation fault to be triggered			[TBD] value is defined/given by the customer																																																
+	Test Step		Ignition ON																																																				
+	Test Step		Read mode of BMS ECU	BMS ECU shall register low isolation in [TBD] secs & ECU goes to safety mode			[TBD] time should be as low as possible for safety purpose																																																
+	Test Step		Read DTC	DTC regarding low isolation shall be registered.																																																			
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF																																																				
+	Precondition		Make sure the Gear Position is set to Neutral																																																				
+FT-BMS-005	Test Case	Maximum cell temperature validity check 	Check if the abnormal flag signal for cell maximum temperature can follow software requirement 				Resource:SOC功能定义SOC-4-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On		钥匙开关-》ON	整车state状态-》30																																																	
+	Precondition		Clear all the DTC's		无操作	无操作																																																	
+	Precondition		Ensure no battery derating or other errors in the system		无操作	动力电池系统故障显示 -》 正常																																																	
+	Test Step		Read the LbSOC_TempMaxErr_flg 	LbSOC_TempMaxErr_flg=0																																																			
+	Stimulation		LeSOC_TempMaxRaw_degC=KeSOC_CTMaxLim_degC+1																																																				
+	Test Step		Read the LbSOC_TempMaxErr_flg 	LbSOC_TempMaxErr_flg=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-006	Test Case	Maximum cell temperature validity check 	Check if the abnormal flag signal for cell maximum temperature can follow software requirement 				Resource:SOC功能定义SOC-4-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_TempMaxErr_flg 	LbSOC_TempMaxErr_flg=0																																																			
+	Stimulation		LeSOC_TempMaxRaw_degC=KeSOC_CTMaxLim_degC-1																																																				
+	Test Step		Read the LbSOC_TempMaxErr_flg 	LbSOC_TempMaxErr_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-007	Test Case	Maximum cell temperature validity check 	Check if the abnormal flag signal for cell maximum temperature can follow software requirement 				Resource:SOC功能定义SOC-4-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_TempMaxErr_flg 	LbSOC_TempMaxErr_flg=0																																																			
+	Stimulation		LeSOC_TempMaxRaw_degC=KeSOC_CTMinLim_degC-1																																																				
+	Test Step		Read the LbSOC_TempMaxErr_flg 	LbSOC_TempMaxErr_flg=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-008	Test Case	Maximum cell temperature validity check 	Check if the abnormal flag signal for cell maximum temperature can follow software requirement 				Resource:SOC功能定义SOC-4-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_TempMaxErr_flg 	LbSOC_TempMaxErr_flg=0																																																			
+	Stimulation		LeSOC_TempMaxRaw_degC=KeSOC_CTMinLim_degC+1																																																				
+	Test Step		Read the LbSOC_TempMaxErr_flg 	LbSOC_TempMaxErr_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-009	Test Case	Minimum cell temperature validity check 	Check if the abnormal flag signal for cell minimum temperature can follow software requirement 				Resource:SOC功能定义SOC-5-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_TempMinErr_flg 	LbSOC_TempMinErr_flg=0																																																			
+	Stimulation		LeSOC_TempMinRaw_degC=KeSOC_CTMaxLim_degC+1																																																				
+	Test Step		Read the LbSOC_TempMinErr_flg 	LbSOC_TempMinErr_flg=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-010	Test Case	Minimum cell temperature validity check 	Check if the abnormal flag signal for cell minimum temperature can follow software requirement 				Resource:SOC功能定义SOC-5-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_TempMinErr_flg 	LbSOC_TempMinErr_flg=0																																																			
+	Stimulation		LeSOC_TempMinRaw_degC=KeSOC_CTMaxLim_degC-1																																																				
+	Test Step		Read the LbSOC_TempMinErr_flg 	LbSOC_TempMinErr_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-011	Test Case	Minimum cell temperature validity check 	Check if the abnormal flag signal for cell minimum temperature can follow software requirement 				Resource:SOC功能定义SOC-5-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_TempMinErr_flg 	LbSOC_TempMinErr_flg=0																																																			
+	Stimulation		LeSOC_TempMinRaw_degC=KeSOC_CTMinLim_degC-1																																																				
+	Test Step		Read the LbSOC_TempMinErr_flg 	LbSOC_TempMinErr_flg=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-012	Test Case	Minimum cell temperature validity check 	Check if the abnormal flag signal for cell minimum temperature can follow software requirement 				Resource:SOC功能定义SOC-5-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_TempMinErr_flg 	LbSOC_TempMinErr_flg=0																																																			
+	Stimulation		LeSOC_TempMinRaw_degC=KeSOC_CTMinLim_degC+1																																																				
+	Test Step		Read the LbSOC_TempMinErr_flg 	LbSOC_TempMinErr_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-013	Test Case	Maximum cell voltage validity check 	Check if the abnormal flag signal for cell maximum voltage can follow software requirement 				Resource:SOC功能定义SOC-6-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_CVMaxErr_flg 	LbSOC_CVMaxErr_flg=0																																																			
+	Stimulation		LuSOC_CVMaxRaw_V=KuSOC_CVMaxLim_V+1																																																				
+	Test Step		Read the LbSOC_CVMaxErr_flg 	LbSOC_CVMaxErr_flg=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-014	Test Case	Maximum cell voltage validity check 	Check if the abnormal flag signal for cell maximum voltage can follow software requirement 				Resource:SOC功能定义SOC-6-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_CVMaxErr_flg 	LbSOC_CVMaxErr_flg=0																																																			
+	Stimulation		LuSOC_CVMaxRaw_V=KuSOC_CVMaxLim_V-1																																																				
+	Test Step		Read the LbSOC_CVMaxErr_flg 	LbSOC_CVMaxErr_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-015	Test Case	Maximum cell voltage validity check 	Check if the abnormal flag signal for cell maximum voltage can follow software requirement 				Resource:SOC功能定义SOC-6-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_CVMaxErr_flg 	LbSOC_CVMaxErr_flg=0																																																			
+	Stimulation		LuSOC_CVMaxRaw_V=KuSOC_CVMinLim_V-1																																																				
+	Test Step		Read the LbSOC_CVMaxErr_flg 	LbSOC_CVMaxErr_flg=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-016	Test Case	Maximum cell voltage validity check 	Check if the abnormal flag signal for cell maximum voltage can follow software requirement 				Resource:SOC功能定义SOC-6-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_CVMaxErr_flg 	LbSOC_CVMaxErr_flg=0																																																			
+	Stimulation		LuSOC_CVMaxRaw_V=KuSOC_CVMinLim_V+1																																																				
+	Test Step		Read the LbSOC_CVMaxErr_flg 	LbSOC_CVMaxErr_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-017	Test Case	Minimum cell voltage validity check 	Check if the abnormal flag signal for cell minimum voltage can follow software requirement 				Resource:SOC功能定义SOC-7-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_CVMinErr_flg 	LbSOC_CVMinErr_flg=0																																																			
+	Stimulation		LuSOC_CVMinRaw_V=KuSOC_CVMaxLim_V+1																																																				
+	Test Step		Read the LbSOC_CVMinErr_flg 	LbSOC_CVMinErr_flg=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-018	Test Case	Minimum cell voltage validity check 	Check if the abnormal flag signal for cell minimum voltage can follow software requirement 				Resource:SOC功能定义SOC-7-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system		LbSOC_CVMaxErr_flg																																																		
+	Test Step		Read the LbSOC_CVMinErr_flg 	LbSOC_CVMinErr_flg=0																																																			
+	Stimulation		LuSOC_CVMinRaw_V=KuSOC_CVMaxLim_V-1																																																				
+	Test Step		Read the LbSOC_CVMaxErr_flg 	LbSOC_CVMinErr_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-019	Test Case	Minimum cell voltage validity check 	Check if the abnormal flag signal for cell minimum voltage can follow software requirement 				Resource:SOC功能定义SOC-7-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_CVMinErr_flg 	LbSOC_CVMinErr_flg=0																																																			
+	Stimulation		LuSOC_CVMinRaw_V=KuSOC_CVMinLim_V-1																																																				
+	Test Step		Read the LbSOC_CVMaxErr_flg 	LbSOC_CVMinErr_flg=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-020	Test Case	Minimum cell voltage validity check 	Check if the abnormal flag signal for cell minimum voltage can follow software requirement 				Resource:SOC功能定义SOC-7-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_CVMinErr_flg 	LbSOC_CVMinErr_flg=0																																																			
+	Stimulation		LuSOC_CVMinRaw_V=KuSOC_CVMinLim_V+1																																																				
+	Test Step		Read the LbSOC_CVMaxErr_flg 	LbSOC_CVMinErr_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-021	Test Case	Charge target check 	Check if the abnormal flag signal for charge target can follow software requirement 				Resource:SOC功能定义SOC-79-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_DispSOCSETErr_flg 	LbSOC_DispSOCSETErr_flg=0																																																			
+	Stimulation		LuSOC_DispSOCSETraw_pct=KuSOC_DispSOCSETMax_pct+1																																																				
+	Test Step		Read the LbSOC_DispSOCSETErr_flg 	LbSOC_DispSOCSETErr_flg=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-022	Test Case	Charge target check 	Check if the abnormal flag signal for charge target can follow software requirement 				Resource:SOC功能定义SOC-79-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_DispSOCSETErr_flg 	LbSOC_DispSOCSETErr_flg=0																																																			
+	Stimulation		LuSOC_DispSOCSETraw_pct=KuSOC_DispSOCSETMax_pct-1																																																				
+	Test Step		Read the LbSOC_DispSOCSETErr_flg 	LbSOC_DispSOCSETErr_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-023	Test Case	Charge target check 	Check if the abnormal flag signal for charge target can follow software requirement 				Resource:SOC功能定义SOC-79-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_DispSOCSETErr_flg 	LbSOC_DispSOCSETErr_flg=0																																																			
+	Stimulation		LuSOC_DispSOCSETraw_pct=KuSOC_DispSOCSETMin_pct-1																																																				
+	Test Step		Read the LbSOC_DispSOCSETErr_flg 	LbSOC_DispSOCSETErr_flg=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-024	Test Case	Charge target check 	Check if the abnormal flag signal for charge target can follow software requirement 				Resource:SOC功能定义SOC-79-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_DispSOCSETErr_flg 	LbSOC_DispSOCSETErr_flg=0																																																			
+	Stimulation		LuSOC_DispSOCSETraw_pct=KuSOC_DispSOCSETMin_pct+1																																																				
+	Test Step		Read the LbSOC_DispSOCSETErr_flg 	LbSOC_DispSOCSETErr_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-025	Test Case	Charge remaining time check 	Check if the abnormal flag signal for charge remaining time can follow software requirement 				Resource:SOC功能定义SOC-80-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_DispSOCSETErr_flg 	LbSOC_DispSOCSETErr_flg=0																																																			
+	Stimulation		LeSOC_CHGReTimeraw_min=KeSOC_CHGReTimeMax_min+1																																																				
+	Test Step		Read the LbSOC_DispSOCSETErr_flg 	LbSOC_DispSOCSETErr_flg=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-026	Test Case	Charge remaining time check 	Check if the abnormal flag signal for charge remaining time can follow software requirement 				Resource:SOC功能定义SOC-80-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_DispSOCSETErr_flg 	LbSOC_DispSOCSETErr_flg=0																																																			
+	Stimulation		LeSOC_CHGReTimeraw_min=KeSOC_CHGReTimeMax_min-1																																																				
+	Test Step		Read the LbSOC_DispSOCSETErr_flg 	LbSOC_DispSOCSETErr_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-027	Test Case	Charge remaining time check 	Check if the abnormal flag signal for charge remaining time can follow software requirement 				Resource:SOC功能定义SOC-80-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_DispSOCSETErr_flg 	LbSOC_DispSOCSETErr_flg=0																																																			
+	Stimulation		LeSOC_CHGReTimeraw_min=KeSOC_CHGReTimeMin_min-1																																																				
+	Test Step		Read the LbSOC_DispSOCSETErr_flg 	LbSOC_DispSOCSETErr_flg=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-028	Test Case	Charge remaining time check 	Check if the abnormal flag signal for charge remaining time can follow software requirement 				Resource:SOC功能定义SOC-80-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_DispSOCSETErr_flg 	LbSOC_DispSOCSETErr_flg=0																																																			
+	Stimulation		LeSOC_CHGReTimeraw_min=KeSOC_CHGReTimeMin_min+1																																																				
+	Test Step		Read the LbSOC_DispSOCSETErr_flg 	LbSOC_DispSOCSETErr_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-029	Test Case	Modification flag bits based on time validity check 	Check if the abnormal flag signal for modification based on time can follow software requirement 				SOC function definition SOC-81-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_BaseTiCor_flg 	LbSOC_BaseTiCor_flg=0																																																			
+	Stimulation		LbSOC_DownCurrSta_flg=1 																																																				
+	Test Step		Read the LbSOC_BaseTiCor_flg 	LbSOC_BaseTiCor_flg=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-030	Test Case	Modification flag bits based on time validity check 	Check if the abnormal flag signal for modification based on time can follow software requirement 				SOC function definition SOC-81-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_BaseTiCor_flg 	LbSOC_BaseTiCor_flg=0																																																			
+	Stimulation		LbSOC_DownCurrSta_flg=KuSOC_DeltaDispSOCLim_pct-1 																																																				
+	Test Step		Read the LbSOC_BaseTiCor_flg 	LbSOC_BaseTiCor_flg=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-031	Test Case	Modification flag bits based on time validity check 	Check if the abnormal flag signal for modification based on time can follow software requirement 				SOC function definition SOC-81-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_BaseTiCor_flg 	LbSOC_BaseTiCor_flg=0																																																			
+	Stimulation		LbSOC_DownCurrSta_flg=KuSOC_DeltaDispSOCLim_pct+1 																																																				
+	Test Step		Read the LbSOC_BaseTiCor_flg 	LbSOC_BaseTiCor_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-032	Test Case	 Current  validity check 	Check if the abnormal flag signal for currenct can follow software requirement 				SOC function definition SOC-8-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LslSOC_BattSysI_A 	LslSOC_BattSysI_A=0																																																			
+	Stimulation		LslSOC_BattSysIRaw_A=KslSOC_SysIMax_A+1																																																				
+	Test Step		Read the LslSOC_BattSysI_A 	LslSOC_BattSysI_A=KslSOC_SysIMax_A																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-033	Test Case	 Current  validity check 	Check if the abnormal flag signal for currenct can follow software requirement 				SOC function definition SOC-8-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LslSOC_BattSysI_A 	LslSOC_BattSysI_A=0																																																			
+	Stimulation		LslSOC_BattSysIRaw_A=KslSOC_SysIMin_A-1																																																				
+	Test Step		Read the LslSOC_BattSysI_A 	LslSOC_BattSysI_A=KslSOC_SysIMin_A																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-034	Test Case	Accumulative charging capacity validity check 	Check if the abnormal flag signal for accumulative charging capacity can follow software requirement 				SOC function definition SOC-9-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LlSOC_CmltChgCp_Ah 	LlSOC_CmltChgCp_Ah=0																																																			
+	Stimulation		LlSOC_CmltChgCpRaw_Ah=KlSOC_CmltChgCpMaxLim_Ah+1																																																				
+	Test Step		Read the LlSOC_CmltChgCp_Ah 	LlSOC_CmltChgCp_Ah=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-035	Test Case	Accumulative charging capacity validity check 	Check if the abnormal flag signal for accumulative charging capacity can follow software requirement 				SOC function definition SOC-9-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LlSOC_CmltChgCp_Ah 	LlSOC_CmltChgCp_Ah=0																																																			
+	Stimulation		LlSOC_CmltChgCpRaw_Ah=KlSOC_CmltChgCpMaxLim_Ah-1																																																				
+	Test Step		Read the LlSOC_CmltChgCp_Ah 	LlSOC_CmltChgCp_Ah=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-036	Test Case	Accumulative discharge capacity validity check 	Check if the abnormal flag signal for accumulative discharging capacity can follow software requirement 				SOC function definition SOC-10-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LlSOC_CmltDchCp_Ah 	 LlSOC_CmltDchCp_Ah=0 																																																			
+	Stimulation		LlSOC_CmltDchCpRaw_Ah=KlSOC_CmltChgCpMaxLim_Ah+1																																																				
+	Test Step		Read the LlSOC_CmltDchCp_Ah 	 LlSOC_CmltDchCp_Ah=0 																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-037	Test Case	Accumulative discharge capacity validity check 	Check if the abnormal flag signal for accumulative discharging capacity can follow software requirement 				SOC function definition SOC-10-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LlSOC_CmltDchCp_Ah 	 LlSOC_CmltDchCp_Ah=0 																																																			
+	Stimulation		LlSOC_CmltDchCpRaw_Ah=KlSOC_CmltChgCpMaxLim_Ah-1																																																				
+	Test Step		Read the LlSOC_CmltDchCp_Ah 	 LlSOC_CmltDchCp_Ah=1 																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-038	Test Case	Battery system aging correction voltage check 	Check if the abnormal flag signal for battery system aging correction voltage can follow software requirement 				SOC function definition SOC-13-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LuSOC_BattAgingCor_V 	LuSOC_BattAgingCor_V=0																																																			
+	Stimulation		LeSOC_BattAgingFacValid_enum=1																																																				
+	Test Step		Read the LuSOC_BattAgingCor_V 	LuSOC_BattAgingCor_V=KuSOC_BattAgingCor_Y_V																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-039	Test Case	Battery system aging correction voltage check 	Check if the abnormal flag signal for battery system aging correction voltage can follow software requirement 				SOC function definition SOC-13-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LuSOC_BattAgingCor_V 	LuSOC_BattAgingCor_V=0																																																			
+	Stimulation		LeSOC_BattAgingFacValid_enum=2																																																				
+	Test Step		Read the LuSOC_BattAgingCor_V 	LuSOC_BattAgingCor_V=KuSOC_BattAgingCor_Y_V																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-040	Test Case	Battery system aging correction voltage check 	Check if the abnormal flag signal for battery system aging correction voltage can follow software requirement 				SOC function definition SOC-13-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LuSOC_BattAgingCor_V 	LuSOC_BattAgingCor_V=0																																																			
+	Stimulation		LeSOC_BattAgingFacValid_enum=0																																																				
+	Test Step		Read the LuSOC_BattAgingCor_V 	LuSOC_BattAgingCor_V=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-041	Test Case	Battery system aging correction voltage check 	Check if the abnormal flag signal for battery system aging correction voltage can follow software requirement 				SOC function definition SOC-13-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LuSOC_BattAgingCor_V 	LuSOC_BattAgingCor_V=0																																																			
+	Stimulation		LeSOC_BattAgingFacValid_enum=3																																																				
+	Test Step		Read the LuSOC_BattAgingCor_V 	LuSOC_BattAgingCor_V=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-042	Test Case	Driving mode check 	Check if the abnormal flag signal for driving mode can follow software requirement 				SOC function definition SOC-14-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode1St_enum																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LuSOC_BattAgingCor_V=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-043	Test Case	Driving mode check 	Check if the abnormal flag signal for driving mode can follow software requirement 				SOC function definition SOC-14-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode1St_enum+1																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LuSOC_BattAgingCor_V=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-044	Test Case	Driving mode check 	Check if the abnormal flag signal for driving mode can follow software requirement 				SOC function definition SOC-14-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode1St_enum-1																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LuSOC_BattAgingCor_V=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-045	Test Case	Slow charging mode check 	Check if the abnormal flag signal for slow charging mode can follow software requirement 				SOC function definition SOC-15-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode2St_enum																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LuSOC_BattAgingCor_V=2																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-046	Test Case	Slow charging mode check 	Check if the abnormal flag signal for slow charging mode can follow software requirement 				SOC function definition SOC-15-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode2St_enum+1																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LuSOC_BattAgingCor_V=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-047	Test Case	Slow charging mode check 	Check if the abnormal flag signal for slow charging mode can follow software requirement 				SOC function definition SOC-15-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode2St_enum-1																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LuSOC_BattAgingCor_V=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-048	Test Case	Quick charging mode check 	Check if the abnormal flag signal for quick charging mode can follow software requirement 				SOC function definition SOC-16-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode3St_enum																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LuSOC_BattAgingCor_V=3																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-049	Test Case	Quick charging mode check 	Check if the abnormal flag signal for quick charging mode can follow software requirement 				SOC function definition SOC-16-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode3St_enum+1																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LuSOC_BattAgingCor_V=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-050	Test Case	Quick charging mode check 	Check if the abnormal flag signal for quick charging mode can follow software requirement 				SOC function definition SOC-16-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode3St_enum-1																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LuSOC_BattAgingCor_V=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-051	Test Case	Battery pack mode check 	Check if the abnormal flag signal for battery pack mode can follow software requirement 				SOC function definition SOC-17-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LeSOC_ComptrLink_enum=0+1																																																				
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode4St_enum																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LuSOC_BattAgingCor_V=4																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-052	Test Case	Battery pack mode check 	Check if the abnormal flag signal for battery pack mode can follow software requirement 				SOC function definition SOC-17-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LeSOC_ComptrLink_enum=0-1																																																				
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode4St_enum																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LuSOC_BattAgingCor_V=4																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-053	Test Case	Ignition on mode check 	Check if the abnormal flag signal for ignition on mode can follow software requirement 				SOC function definition SOC-18-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode8St_enum																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LuSOC_BattAgingCor_V=8																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-054	Test Case	Ignition on mode check 	Check if the abnormal flag signal for ignition on mode can follow software requirement 				SOC function definition SOC-18-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode8St_enum+1																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LuSOC_BattAgingCor_V=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-055	Test Case	Ignition on mode check 	Check if the abnormal flag signal for ignition on mode can follow software requirement 				SOC function definition SOC-18-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode8St_enum-1																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LuSOC_BattAgingCor_V=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-056	Test Case	Ignition off mode check 	Check if the abnormal flag signal for ignition off mode can follow software requirement 				SOC function definition SOC-19-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode9St_enum																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=9																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-057	Test Case	Ignition off mode check 	Check if the abnormal flag signal for ignition off mode can follow software requirement 				SOC function definition SOC-19-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode9St_enum+1																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-058	Test Case	Ignition off mode check 	Check if the abnormal flag signal for ignition off mode can follow software requirement 				SOC function definition SOC-19-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Stimulation		LuSOC_VehSt_enum=KuSOC_Mode9St_enum-1																																																				
+	Test Step		Read the LeSOC_CalcSt_enum 	LeSOC_CalcSt_enum=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-059	Test Case	Estimate the enable flag bit check 	Check if the abnormal flag signal for estimated enabled flag bit mode can follow software requirement 				SOC function definition SOC-20-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_SOCTaskEn_flg 	LbSOC_SOCTaskEn_flg=0																																																			
+	Stimulation		ID:18e0000x=KuSOC_FctEna_cntr																																																				
+	Test Step		Read the LbSOC_SOCTaskEn_flg 	LbSOC_SOCTaskEn_flg=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-060	Test Case	Estimate the enable flag bit check 	Check if the abnormal flag signal for estimated enabled flag bit mode can follow software requirement 				SOC function definition SOC-20-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_SOCTaskEn_flg 	LbSOC_SOCTaskEn_flg=0																																																			
+	Stimulation		ID:18e0000x=KuSOC_FctEna_cntr+1																																																				
+	Test Step		Read the LbSOC_SOCTaskEn_flg 	LbSOC_SOCTaskEn_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-061	Test Case	Estimate the enable flag bit check 	Check if the abnormal flag signal for estimated enabled flag bit mode can follow software requirement 				SOC function definition SOC-20-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_SOCTaskEn_flg 	LbSOC_SOCTaskEn_flg=0																																																			
+	Stimulation		ID:18e0000x=KuSOC_FctEna_cntr-1																																																				
+	Test Step		Read the LbSOC_SOCTaskEn_flg 	LbSOC_SOCTaskEn_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-062	Test Case	Small current mode check 	Check if the abnormal flag signal for small current mode can follow software requirement 				SOC function definition SOC-67-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_SmallCurrMod_f 	LbSOC_SmallCurrMod_f=0																																																			
+	Stimulation		KslSOC_SmallCurrModLim_Y_A=KuSOC_SmallCurrMod_enum																																																				
+	Stimulation		LeSOC_TempMinRaw_degC=KeSOC_SmallCurrModLim_degC+1																																																				
+	Test Step		Read the LbSOC_SmallCurrMod_f 	LbSOC_SmallCurrMod_f=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-063	Test Case	Small current mode check 	Check if the abnormal flag signal for small current mode can follow software requirement 				SOC function definition SOC-67-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_SmallCurrMod_f 	LbSOC_SmallCurrMod_f=0																																																			
+	Stimulation		KslSOC_SmallCurrModLim_Y_A=KuSOC_SmallCurrMod_enum+1																																																				
+	Stimulation		LeSOC_TempMinRaw_degC=KeSOC_SmallCurrModLim_degC+1																																																				
+	Test Step		Read the LbSOC_SmallCurrMod_f 	LbSOC_SmallCurrMod_f=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-064	Test Case	Small current mode check 	Check if the abnormal flag signal for small current mode can follow software requirement 				SOC function definition SOC-67-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_SmallCurrMod_f 	LbSOC_SmallCurrMod_f=0																																																			
+	Stimulation		KslSOC_SmallCurrModLim_Y_A=KuSOC_SmallCurrMod_enum-1																																																				
+	Stimulation		LeSOC_TempMinRaw_degC=KeSOC_SmallCurrModLim_degC+1																																																				
+	Test Step		Read the LbSOC_SmallCurrMod_f 	LbSOC_SmallCurrMod_f=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-065	Test Case	Small current mode check 	Check if the abnormal flag signal for small current mode can follow software requirement 				SOC function definition SOC-67-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_SmallCurrMod_f 	LbSOC_SmallCurrMod_f=0																																																			
+	Stimulation		KslSOC_SmallCurrModLim_Y_A=KuSOC_SmallCurrMod_enum-1																																																				
+	Stimulation		LeSOC_TempMinRaw_degC=KeSOC_SmallCurrModLim_degC-1																																																				
+	Test Step		Read the LbSOC_SmallCurrMod_f 	LbSOC_SmallCurrMod_f=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-066	Test Case	Cross current mode check 	Check if the abnormal flag signal for cross current mode can follow software requirement 				SOC function definition SOC-78-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_CrossCurrMod_flg 	LbSOC_CrossCurrMod_flg=0																																																			
+	Stimulation		KslSOC_CrossCurrModLim_Y_A=KuSOC_CrossCurrMod_enum																																																				
+	Stimulation		LeSOC_TempMinRaw_degC=KeSOC_CrossCurrModLim_degC+1																																																				
+	Test Step		Read the LbSOC_CrossCurrMod_flg 	LbSOC_CrossCurrMod_flg=1																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-067	Test Case	Cross current mode check 	Check if the abnormal flag signal for cross current mode can follow software requirement 				SOC function definition SOC-78-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_CrossCurrMod_flg 	LbSOC_CrossCurrMod_flg=0																																																			
+	Stimulation		KslSOC_CrossCurrModLim_Y_A=KuSOC_CrossCurrMod_enum+1																																																				
+	Stimulation		LeSOC_TempMinRaw_degC=KeSOC_CrossCurrModLim_degC+1																																																				
+	Test Step		Read the LbSOC_CrossCurrMod_flg 	LbSOC_CrossCurrMod_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-068	Test Case	Cross current mode check 	Check if the abnormal flag signal for cross current mode can follow software requirement 				SOC function definition SOC-78-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Test Step		Read the LbSOC_CrossCurrMod_flg 	LbSOC_CrossCurrMod_flg=0																																																			
+	Stimulation		KslSOC_CrossCurrModLim_Y_A=KuSOC_CrossCurrMod_enum-1																																																				
+	Stimulation		LeSOC_TempMinRaw_degC=KeSOC_CrossCurrModLim_degC+1																																																				
+	Test Step		Read the LbSOC_CrossCurrMod_flg 	LbSOC_CrossCurrMod_flg=0																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-069	Test Case	Quasi static correction mode check 	Check if the abnormal flag signal for quasi static correction mode can follow software requirement 				SOC function definition SOC-68-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		LbSOC_SmallCurrMod_f=1																																																				
+	Stimulation		LbSOC_CVFltErr_flg=0																																																				
+	Stimulation		LlSOC_SemiOCVCp_Ah=KlSOC_SemiOCVCpDetaCorUp+1																																																				
+	Test Step		Read 准静态修正标志位（not found)	准静态修正标志位=1																																																			
+	Test Step		Read Real SOC BMS_PwrBattRmngCpSOC	BMS_PwrBattRmngCpSOC=KuSOC_OCVSOC_Y_pct																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-070	Test Case	Quasi static correction mode check 	Check if the abnormal flag signal for quasi static correction mode can follow software requirement 				SOC function definition SOC-68-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		LbSOC_SmallCurrMod_f=0																																																				
+	Stimulation		LbSOC_CVFltErr_flg=0																																																				
+	Stimulation		LlSOC_SemiOCVCp_Ah=KlSOC_SemiOCVCpDetaCorUp+1																																																				
+	Test Step		Read 准静态修正标志位（not found)	准静态修正标志位=0																																																			
+	Test Step		Read Real SOC BMS_PwrBattRmngCpSOC	BMS_PwrBattRmngCpSOC!=KuSOC_OCVSOC_Y_pct																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-071	Test Case	Quasi static correction mode check 	Check if the abnormal flag signal for quasi static correction mode can follow software requirement 				SOC function definition SOC-68-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		LbSOC_SmallCurrMod_f=1																																																				
+	Stimulation		LbSOC_CVFltErr_flg=1																																																				
+	Stimulation		LlSOC_SemiOCVCp_Ah=KlSOC_SemiOCVCpDetaCorUp																																																				
+	Test Step		Read 准静态修正标志位（not found)	准静态修正标志位=0																																																			
+	Test Step		Read Real SOC BMS_PwrBattRmngCpSOC	BMS_PwrBattRmngCpSOC!=KuSOC_OCVSOC_Y_pct																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-072	Test Case	Quasi static correction mode check 	Check if the abnormal flag signal for quasi static correction mode can follow software requirement 				SOC function definition SOC-68-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		LbSOC_SmallCurrMod_f=1																																																				
+	Stimulation		LbSOC_CVFltErr_flg=1																																																				
+	Stimulation		LlSOC_SemiOCVCp_Ah=KlSOC_SemiOCVCpDetaCorUp+1																																																				
+	Test Step		Read 准静态修正标志位（not found)	准静态修正标志位=0																																																			
+	Test Step		Read Real SOC BMS_PwrBattRmngCpSOC	BMS_PwrBattRmngCpSOC!=KuSOC_OCVSOC_Y_pct																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-73	Test Case	Quasi static correction mode check 	Check if the abnormal flag signal for quasi static correction mode can follow software requirement 				SOC function definition SOC-68-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		LbSOC_SmallCurrMod_f=0																																																				
+	Stimulation		LbSOC_CVFltErr_flg=0																																																				
+	Stimulation		LlSOC_SemiOCVCp_Ah=KlSOC_SemiOCVCpDetaCorUp																																																				
+	Test Step		Read 准静态修正标志位（not found)	准静态修正标志位=0																																																			
+	Test Step		Read Real SOC BMS_PwrBattRmngCpSOC	BMS_PwrBattRmngCpSOC!=KuSOC_OCVSOC_Y_pct																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-074	Test Case	Quasi static correction mode check 	Check if the abnormal flag signal for quasi static correction mode can follow software requirement 				SOC function definition SOC-68-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		LbSOC_SmallCurrMod_f=0																																																				
+	Stimulation		LbSOC_CVFltErr_flg=0																																																				
+	Stimulation		LlSOC_SemiOCVCp_Ah=KlSOC_SemiOCVCpDetaCorUp																																																				
+	Test Step		Read 准静态修正标志位（not found)	准静态修正标志位=0																																																			
+	Test Step		Read Real SOC BMS_PwrBattRmngCpSOC	BMS_PwrBattRmngCpSOC!=KuSOC_OCVSOC_Y_pct																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-075	Test Case	Static SOC calculation based on OCV	Check if the abnormal flag signal for quasi static correction mode can follow software requirement 				SOC function definition SOC-29-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		Lb_SOCOCVCorEn_flg=1																																																				
+	Test Step		Read LuSOC_OCVMaxVSOC_pct	LuSOC_OCVMaxVSOC_pct =SOC based on KuSOC_OCVSOC_Y_pct																																																			
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-076	Test Case	Static SOC calculation based on OCV	Check if the abnormal flag signal for quasi static correction mode can follow software requirement 				SOC function definition SOC-29-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		Lb_SOCOCVCorEn_flg=0																																																				
+	Test Step		Read LuSOC_OCVMaxVSOC_pct	LuSOC_OCVMaxVSOC_pct =CUSOC_SOCINVLD_PCT																																																			
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-077	Test Case	Static SOC calculation based on OCV	Check if the abnormal flag signal for quasi static correction mode can follow software requirement 				SOC function definition SOC-30-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		Lb_SOCOCVCorEn_flg=1																																																				
+	Test Step		Read LuSOC_OCVMinVSOC_pct	LuSOC_OCVMinVSOC_pct =SOC based on KuSOC_OCVSOC_Y_pct																																																			
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-078	Test Case	Static SOC calculation based on OCV	Check if the abnormal flag signal for quasi static correction mode can follow software requirement 				SOC function definition SOC-30-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		Lb_SOCOCVCorEn_flg=0																																																				
+	Test Step		Read LuSOC_OCVMinVSOC_pct	LuSOC_OCVMinVSOC_pct =CUSOC_SOCINVLD_PCT																																																			
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-079	Test Case	Static SOC calculation based on OCV	Check if the abnormal flag signal for quasi static correction mode can follow software requirement 				SOC function definition SOC-31-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		Lb_SOCOCVCorEn_flg=1																																																				
+	Test Step		Read LlSOC_OCVMaxVCp_Ah	LlSOC_OCVMaxVCp_Ah=LuSOC_OCVMaxVSOC_pct/100*KlSOC_RatedCpMax_Ah																																																			
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-080	Test Case	Static SOC calculation based on OCV	Check if the abnormal flag signal for quasi static correction mode can follow software requirement 				SOC function definition SOC-31-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		Lb_SOCOCVCorEn_flg=0																																																				
+	Test Step		Read LlSOC_OCVMaxVCp_Ah	LlSOC_OCVMaxVCp_Ah=CLSOC_CpINVLD_AH																																																			
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-081	Test Case	Static SOC calculation based on OCV	Check if the abnormal flag signal for quasi static correction mode can follow software requirement 				SOC function definition SOC-31-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		Lb_SOCOCVCorEn_flg=1																																																				
+	Test Step		Read LlSOC_OCVMinVCp_Ah	LlSOC_OCVMinVCp_Ah=LuSOC_OCVMinVSOC_pct/100*KlSOC_RatedCpMax_Ah																																																			
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-082	Test Case	Static SOC calculation based on OCV	Check if the abnormal flag signal for quasi static correction mode can follow software requirement 				SOC function definition SOC-31-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		Lb_SOCOCVCorEn_flg=0																																																				
+	Test Step		Read LlSOC_OCVMinVCp_Ah	LlSOC_OCVMinVCp_Ah=CLSOC_CpINVLD_AH																																																			
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-083	Test Case	Discharge look-up table check 	Check if the static discharge power from look-up table method match software requirement 				Resource:充放电功率控制功能定义1-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Precondition		LsPWRCTL_BMUMinTemp_deg is normal（!= -48 \ 207)																																																				
+	Precondition		LsPWRCTL_BMUMaxTemp_deg is normal（!= -48 \ 207)																																																				
+	Precondition		VePWRCTL_CutPwrPercent_enum == 1																																																				
+	Stimulation		VCU_VehMod=0x2																																																				
+	Stimulation		LsPWRCTL_BMUMinTemp_deg=15																																																				
+	Stimulation		LsPWRCTL_BMUMaxTemp_deg =25																																																				
+	Stimulation		LuPWRCTL_BattSOC_pct=50																																																				
+	Test Step		Read VlPWRCTL_DchgP_W 	 VlPWRCTL_DchgP_W=99.3 																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-084	Test Case	Discharge look-up table check 	Check if the static discharge power from look-up table method match software requirement 				Resource:充放电功率控制功能定义1-1		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Precondition		LsPWRCTL_BMUMinTemp_deg is normal（!= -48 \ 207)																																																				
+	Precondition		LsPWRCTL_BMUMaxTemp_deg is normal（!= -48 \ 207)																																																				
+	Precondition		VePWRCTL_CutPwrPercent_enum == 1																																																				
+	Stimulation		VCU_VehMod=0x2																																																				
+	Stimulation		LsPWRCTL_BMUMinTemp_deg=40																																																				
+	Stimulation		LsPWRCTL_BMUMaxTemp_deg =50																																																				
+	Stimulation		LuPWRCTL_BattSOC_pct=50																																																				
+	Test Step		Read VlPWRCTL_DchgP_W 	 VlPWRCTL_DchgP_W=67.3 																																																			
+	Test Step		Read DTC																																																				
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-085	Test Case	Cumulative capacity display check   	Check if the abnormal flag signal for cumulative capacity display can follow software requirement 				Cumulative capacity function definition		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		state = 12/82/142																																																				
+	Test Step		Read the VlCRTINT_DischrgAhIntgODO_Ah 	VlCRTINT_DischrgAhIntgODO_Ah=LlCRTINT_MemDischrgAhODO_Ah																																																			
+	Test Step		ReadVlCRTINT_ChrgAhIntgODO_Ah 	VlCRTINT_ChrgAhIntgODO_Ah=LlCRTINT_MemChrgAhODO_Ah																																																			
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-086	Test Case	Current charge capacity calculation check   	Check if the abnormal flag signal for current charge capacity calculation can follow software requirement 				Cumulative capacity function definition		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		state = 12~47，82~127，130~135，142~187																																																				
+	Test Step		LfCRTINT_InstCurrent_A≧0 																																																				
+	Test Step		LfCRTINT_ChIntgCurrent_A = 0 	VlCRTINT_ChrgAhIntgODO_Ah=																																																			
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-087	Test Case	Current charge capacity calculation check   	Check if the abnormal flag signal for current charge capacity calculation can follow software requirement 				Cumulative capacity function definition		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		state = 12~47，82~127，130~135，142~187																																																				
+	Test Step		LfCRTINT_InstCurrent_A≦0 																																																				
+	Test Step		LfCRTINT_ChIntgCurrent_A = LfCRTINT_InstCurrent_A 	VlCRTINT_ChrgAhIntgODO_Ah=																																																			
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-088	Test Case	Current discharge capacity calculation check   	Check if the abnormal flag signal for current discharge capacity calculation can follow software requirement 				Cumulative capacity function definition		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		state = 12~47，82~127，130~135，142~187																																																				
+	Test Step		LfCRTINT_InstCurrent_A≧0 																																																				
+	Test Step		LfCRTINT_DischIntgCurrent_A = LfCRTINT_InstCurrent_A 	VlCRTINT_DischrgAhIntgODO_Ah=																																																			
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-089	Test Case	Current discharge capacity calculation check   	Check if the abnormal flag signal for current discharge capacity calculation can follow software requirement 				Cumulative capacity function definition		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		state = 12~47，82~127，130~135，142~187																																																				
+	Test Step		LfCRTINT_InstCurrent_A≧0 																																																				
+	Test Step		LfCRTINT_DischIntgCurrent_A = LfCRTINT_InstCurrent_A 	VlCRTINT_DischrgAhIntgODO_Ah=																																																			
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
+FT-BMS-090	Test Case	Current discharge capacity calculation check   	Check if the abnormal flag signal for current discharge capacity calculation can follow software requirement 				Cumulative capacity function definition		Not Tested	Experience Based																																													
+	Precondition		Ignition On																																																				
+	Precondition		Clear all the DTC's																																																				
+	Precondition		Ensure no battery derating or other errors in the system																																																				
+	Stimulation		BMSEEPROM_Err== 1																																																				
+	Stimulation		VlCRTINT_DischrgAhIntgODO_Ah== KlCRTINT_AhCapInvld_Ah-1																																																				
+	Stimulation		LbCRTINT_ODOLife_flg==1																																																				
+	Test Step		Observe VlCRTINT_DCHAhOrig_Ah	VlCRTINT_DischrgAhIntgODO_Ah=LlCRTINT_MemDischrgAhODO_Ah																																																			
+	Test Step		Observer VeCRTINT_CapMod_enum	VeCRTINT_CapMod_enum=0																																																			
+	Test Step		Observer VeCRTINT_CapMod_enum	VeCRTINT_CapMod_enum=1																																																			
+	Postcondition		Clear the fault memory																																																				
+	Postcondition		 Ignition OFF	No DTC shall register in the fault memory																																																			
