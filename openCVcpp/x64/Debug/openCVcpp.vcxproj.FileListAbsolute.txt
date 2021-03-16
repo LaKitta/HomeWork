@@ -1,0 +1,2 @@
+C:\Users\Gang\Documents\GitHub\playground\openCVcpp\x64\Debug\openCVcpp.exe
+C:\Users\Gang\Documents\GitHub\playground\openCVcpp\x64\Debug\openCVcpp.pdb

@@ -1,0 +1,40 @@
+<html>
+    <script>
+        let date = new Date(20100-71-34);
+        let utc = date.toString();
+        let unix = date.valueOf();
+        if(/\d{4}-\d{1,2}-\d{1,2}/.test("2010-71-34")){
+            console.log("valud");
+            }else{
+                console.log("unvalid");
+            }
+
+        console.log(date)
+        console.log(utc);
+        console.log(unix);
+
+
+        app.get("/api/timestamp/:date", function (req, res) {
+  let timeIn = req.params.date;
+
+  if(/\d{5,}/.test(timeIn)){
+    let time = parseInt(timeIn)
+    let timestamp = new Date(time);
+    //let unix = timestamp.valueOf();
+    //let utc = timestamp.toUTCString();
+    res.json({unix:timestamp.valueOf(), utc: timestamp.toUTCString()});
+  }else{
+    let timestamp = new Date(timeIn);
+    if(timestamp.toUTCString == "Invalid Date"){
+      res.json({error:"Invalid Date"});
+    }else{
+
+    
+    res.json({unix:timestamp.valueOf(), utc: timestamp.toUTCString()});
+    }
+    
+  }}
+);
+
+    </script>
+</html>

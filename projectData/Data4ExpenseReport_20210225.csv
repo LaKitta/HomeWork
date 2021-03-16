@@ -1,0 +1,654 @@
+﻿FxYear,FxMonth,Item,Project,BilliableDate,Expr1003,Category,Partner,Phase,Type
+2019,10,RBEI Onsite Oct2019,GE13,01-10-19,-34000,RBEIOnsite,RBEI,VP2 Test Phase,Cost
+2019,9,RBEI Onsite Sep2019,FE5AB/6AB,01-09-19,-17000,RBEIOnsite,RBEI,VP1 Test Phase,Cost
+2019,9,RBEI Onsite Sep2019,GE12B,01-09-19,-17000,RBEIOnsite,RBEI,SOP +6,Cost
+2019,9,RBEI Onsite Sep2019,GE13,01-09-19,-17000,RBEIOnsite,RBEI,M2-2 Test Phase,Cost
+2020,3,Reimbursement,FE3AH,01-03-20,-62.7,Expense,Foryou,VP Test Phase,Cost
+2019,9,Reimbursement,FE5AB/6AB,01-09-19,-3293.5,Expense,Foryou,VP1 Test Phase,Cost
+2019,12,Reimbursement,FE5AB/6AB,01-12-19,-18039.27,Expense,Foryou,VP1 Test Phase,Cost
+2020,2,Reimbursement,FE5AB/6AB,01-02-20,-2300,Expense,Jintech,VP2 Test Phase,Cost
+2019,7,Reimbursement,GE12B,01-07-19,-3565,Expense,Foryou,TT Test Phase,Cost
+2019,10,Reimbursement,GE12B,01-10-19,-8783,Expense,Foryou,SOP +6,Cost
+2019,6,Reimbursement,GE13,01-06-19,-5702.29,Expense,Foryou,M2-2 Test Phase,Cost
+2019,8,Reimbursement,GE13,01-08-19,-2560,Expense,Foryou,M2-2 Test Phase,Cost
+2019,11,Reimbursement,GE13,01-11-19,-17729.5,Expense,Foryou,VP2 Test Phase,Cost
+2020,1,Reimbursement,GE13,01-01-20,-6263.5,Expense,Foryou,TT Test Phase,Cost
+2020,3,Reimbursement,GE13,01-03-20,-4000,Expense,Jintech,TT2 Test Phase,Cost
+2020,8,Reimbursement - Caiyinan,DFM,01-08-20,-14100,Expense,Foryou,,Cost
+2020,8,Reimbursement - Caiyinan,DFM,01-08-20,-8520.3,Expense,Foryou,,Cost
+2020,11,Reimbursement - CaiYinan,DFM,01-11-20,-3775.75,Expense,Foryou,,Cost
+2020,12,Reimbursement - CaiYinan&WangKe,DFM,01-12-20,-23404.84,Expense,Foryou,,Cost
+2020,6,Reimbursement - CaiyinanWangke,DFM,01-06-20,-5838,Expense,Foryou,,Cost
+2020,7,Reimbursement - CaiyinanWangke,DFM,01-07-20,-15300,Expense,Foryou,,Cost
+2021,1,Reimbursement - ChenQia,AE Testing,01-01-21,-4991.9,Expense,Foryou,,Cost
+2020,5,Reimbursement - DF,DFM,01-05-20,-3255,Expense,Foryou,,Cost
+2020,8,Reimbursement - Fanguodong,FE3AH,01-08-20,-350,Expense,Foryou,,Cost
+2020,2,Reimbursement - Hanyixuan,GE13,01-02-20,-736,Expense,Jintech,TT2 Test Phase,Cost
+2020,3,Reimbursement - Hanyixuan,GE13,01-03-20,-6100,Expense,Jintech,TT2 Test Phase,Cost
+2020,4,Reimbursement - Hanyixuan,GE13,01-04-20,-6000,Expense,Jintech,,Cost
+2020,5,Reimbursement - Hanyixuan,GE13,01-05-20,-6689,Expense,Jintech,,Cost
+2020,6,Reimbursement - Hanyixuan,GE13,01-06-20,-500,Expense,Jintech,,Cost
+2020,4,Reimbursement - Liyan,GE13,01-04-20,-235,Expense,Foryou,,Cost
+2020,4,Reimbursement - Lizhipeng,FE3AH,01-04-20,-4800,Expense,Foryou,,Cost
+2020,7,Reimbursement - Lizhipeng,FE3AH,01-07-20,-36494,Expense,Foryou,,Cost
+2020,8,Reimbursement - Lizhipeng,FE3AH,01-08-20,-5100,Expense,Foryou,,Cost
+2020,10,Reimbursement - LiZhipeng,FE3AH,01-10-20,-4430,Expense,Foryou,,Cost
+2020,11,Reimbursement - LiZhipeng,FE3AH,01-11-20,-10509,Expense,Foryou,,Cost
+2020,12,Reimbursement - LiZhipeng&XuGang&WuDan,FE3AH,01-12-20,-16117.5,Expense,Foryou,,Cost
+2020,7,Reimbursement - Other,FE3AH,01-07-20,-13013,Expense,Jintech,,Cost
+2020,7,Reimbursement - Other,FE5AB/6AB,01-07-20,-13013,Expense,Jintech,,Cost
+2020,5,Reimbursement - Other,GE13,01-05-20,-59200,Expense,Jintech,,Cost
+2020,7,Reimbursement - Other,GE13,01-07-20,-13013,Expense,Jintech,,Cost
+2020,3,Reimbursement - Taowenqiang,BYD,01-03-20,-4816.96,Expense,Jintech,1st Phase,Cost
+2020,4,Reimbursement - Taowenqiang,BYD,01-04-20,-6783.4,Expense,Jintech,,Cost
+2020,5,Reimbursement - Taowenqiang,BYD,01-05-20,-6548.37,Expense,Jintech,,Cost
+2020,6,Reimbursement - Taowenqiang,BYD,01-06-20,-6903.58,Expense,Jintech,,Cost
+2020,7,Reimbursement - Taowenqiang,BYD,01-07-20,-6923,Expense,Jintech,,Cost
+2020,8,Reimbursement - Taowenqiang,BYD,01-08-20,-6943,Expense,Jintech,,Cost
+2020,11,Reimbursement - Taowenqiang,BYD,01-11-20,-5329.2,Expense,Jintech,,Cost
+2020,7,Reimbursement - Wangke,DFM,01-07-20,-1295,Expense,Foryou,,Cost
+2020,9,Reimbursement - WangKe,DFM,01-09-20,-8100,Expense,Foryou,,Cost
+2020,10,Reimbursement - WangKe,DFM,01-10-20,-16818.05,Expense,Foryou,,Cost
+2020,11,Reimbursement - WangKe,DFM,01-11-20,-10397.84,Expense,Foryou,,Cost
+2021,1,Reimbursement - WangKe,DFM,01-01-21,-5463.31,Expense,Foryou,,Cost
+2020,4,Reimbursement - Wangyulong,FE3AH,01-04-20,-1880,Expense,Foryou,,Cost
+2020,5,Reimbursement - Wangyulong,FE3AH,01-05-20,-1100,Expense,Foryou,,Cost
+2020,11,Reimbursement - WangYulong,FE3AH,01-11-20,-1610,Expense,Foryou,,Cost
+2021,1,Reimbursement - WangYulong,V&V Testing,01-01-21,-2015,Expense,Foryou,,Cost
+2020,4,Reimbursement - Wenmingxin,FE3AH,01-04-20,-4754.5,Expense,Foryou,,Cost
+2020,5,Reimbursement - Wenmingxin,FE3AH,01-05-20,-80,Expense,Foryou,,Cost
+2020,9,Reimbursement - XuGang,FE3AH,01-09-20,-3064.28,Expense,Foryou,,Cost
+2020,7,Reimbursement - XuGang,GE13,01-07-20,-11250,Expense,Foryou,,Cost
+2019,5,Reimbursement of XuMengmeng,GE12B,01-05-19,-3028.75,Expense,Foryou,TT Test Phase,Cost
+2019,3,Reimbursement of XuMengmeng,GE13,01-03-19,-17227.22,IndianEngineer,Foryou,M2 Test Phase,Cost
+2020,7,Resistance Box,FE3AH,01-07-20,-350,IndianEngineer,Foryou,,Cost
+2020,3,Room Service,FE5AB/6AB,01-03-20,-450,IndianEngineer,Foryou,VP2 Test Phase,Cost
+2020,4,Room Service - Venu,GE13,01-04-20,-450,IndianEngineer,Foryou,,Cost
+2019,8,Shen Chunjian,GE13,01-08-19,-32175,EngineerCost,Jintech,M2-2 Test Phase,Cost
+2019,9,Shen Chunjian,GE13,01-09-19,-16200,EngineerCost,Jintech,M2-2 Test Phase,Cost
+2020,4,T-Box Testing,FE5AB/6AB,01-04-20,-18000,Expense,Foryou,,Cost
+2020,3,Test Case Writing,FE3AH,01-03-20,-40500,Expense,Foryou,VP Test Phase,Cost
+2019,6,Test Case Writing,GE13,01-06-19,-102600,Expense,Foryou,M2-2 Test Phase,Cost
+2019,2,Test case-Feb,GE12B,01-02-19,-111600,Expense,Foryou,VP2 Test Phase,Cost
+2019,1,Test case-Jan,GE12B,01-01-19,-84600,Expense,Foryou,VP2 Test Phase,Cost
+2019,10,Utility&Room Service,FE5AB/6AB,01-10-19,-1015.87,IndianEngineer,Foryou,VP1 Test Phase,Cost
+2019,12,Utility&Room Service,FE5AB/6AB,01-12-19,-4496.2,IndianEngineer,Foryou,VP1 Test Phase,Cost
+2020,2,Utility&Room Service,FE5AB/6AB,01-02-20,-506.87,IndianEngineer,Foryou,VP2 Test Phase,Cost
+2019,11,Utility&Room Service,GE13,01-11-19,-1476.49,IndianEngineer,Foryou,VP2 Test Phase,Cost
+2020,1,Utility&Room Service,GE13,01-01-20,-1105.59,IndianEngineer,Foryou,TT Test Phase,Cost
+2021,1,于慧媛/Huiyuan Yu,GE13,01-01-21,-19950,EngineerCost,Cantech,,Cost
+2019,8,代天文/Tianwen Dai,GE13,01-08-19,-7200,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,9,代天文/Tianwen Dai,GE13,01-09-19,-43065,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,10,代天文/Tianwen Dai,GE13,01-10-19,-46091.25,EngineerCost,Foryou,VP2 Test Phase,Cost
+2019,11,代天文/Tianwen Dai,GE13,01-11-19,-43425,EngineerCost,Foryou,VP2 Test Phase,Cost
+2019,12,代天文/Tianwen Dai,GE13,01-12-19,-45967.5,EngineerCost,Foryou,TT Test Phase,Cost
+2020,9,,BJEV,15-09-20,221334.6038,,,Prepayment,Revenue
+2021,1,,BJEV,15-01-21,1106672.998,,,1st phase,Revenue
+2021,7,,BJEV,15-07-21,147556.399,,,2nd phase,Revenue
+2019,10,,BYD,30-10-19,465000.005,,,Prepayment,Revenue
+2020,4,,BYD,17-04-20,465000.005,,,1st phase,Revenue
+2020,5,,BYD,30-05-20,465000.005,,,2nd phase,Revenue
+2020,11,,BYD,30-11-20,155000.0052,,,3rd phase,Revenue
+2020,4,,DFM,30-04-20,359999.9984,,,Prepayment,Revenue
+2020,9,,DFM,30-09-20,719999.9968,,,1st phase,Revenue
+2020,12,,DFM,31-12-20,120000.003,,,2nd phase,Revenue
+2020,5,,FE3AH,15-05-20,399999.2044,,,VP Test Phase,Revenue
+2020,6,,FE3AH,30-06-20,499999.0002,,,TT&PP Test Phase,Revenue
+2020,12,,FE3AH,31-12-20,99999.7958,,,SOP +6,Revenue
+2020,1,,FE5AB/6AB,30-01-20,431777.6016,,,VP1 Test Phase,Revenue
+2020,3,,FE5AB/6AB,30-03-20,431777.6016,,,VP2 Test Phase,Revenue
+2020,5,,FE5AB/6AB,30-05-20,431777.6016,,,TT Test Phase,Revenue
+2020,8,,FE5AB/6AB,07-08-20,80000.002,,,3rd Party 1,Revenue
+2020,8,,FE5AB/6AB,30-08-20,130000.0006,,,Extension,Revenue
+2020,8,,FE5AB/6AB,30-08-20,647666.4024,,,PP Test Phase,Revenue
+2020,9,,FE5AB/6AB,30-09-20,85000.0008,,,3rd Party 2,Revenue
+2021,1,,FE5AB/6AB,30-01-21,215888.8008,,,SOP +6,Revenue
+2019,11,,GAC,30-11-19,671999.9956,,,Prepayment,Revenue
+2020,4,,GAC,20-04-20,335999.9978,,,1st phase,Revenue
+2020,7,,GAC,10-07-20,504000.002,,,2nd phase,Revenue
+2021,1,,GAC,10-01-21,168000.0042,,,3rd phase,Revenue
+2020,9,,GAC CCD,30-09-20,449999.998,,,Prepayment,Revenue
+2021,1,,GAC CCD,31-01-21,899999.996,,,2nd phase,Revenue
+2021,2,,GAC CCD,02-02-21,899999.996,,,1st phase,Revenue
+2019,4,,GE12B,30-04-19,380000.0042,,,VP2 Test Phase,Revenue
+2019,7,,GE12B,20-07-19,475000.0026,,,TT Test Phase,Revenue
+2020,2,,GE12B,20-02-20,94999.9984,,,SOP +6,Revenue
+2019,9,,GE13,20-09-19,719599.974,,,M2-2 Test Phase,Revenue
+2019,11,,GE13,30-11-19,539699.954,,,VP2 Test Phase,Revenue
+2019,11,,GE13,30-11-19,719599.974,,,M2 Test Phase,Revenue
+2020,1,,GE13,30-01-20,539699.954,,,TT Test Phase,Revenue
+2020,3,,GE13,31-03-20,719599.974,,,TT2 Test Phase,Revenue
+2020,8,,GE13,31-08-20,359800.04,,,SOP +6,Revenue
+2020,9,,RBJAC,30-09-20,613799.996,,,FRS D0,Revenue
+2020,10,,RBJAC,30-10-20,1023000,,,FRS Bugfix,Revenue
+2021,5,,RBJAC,30-05-21,409200.0044,,,Final Acceptence,Revenue
+2019,9,,UAES,30-09-19,128790,,,1st phase,Revenue
+2019,11,,UAES,30-11-19,128790,,,2nd phase,Revenue
+2020,9,1st Payment of Brilliance-Renault Project,RBJAC,01-09-20,-495000,Expense,Foryou,,Cost
+2020,7,Apartment - Manoj,GAC,01-07-20,-9372,IndianEngineer,Foryou,,Cost
+2020,8,Apartment - Manoj,GAC,01-08-20,-4686.6,IndianEngineer,Foryou,,Cost
+2020,9,Apartment - Manoj,GAC,01-09-20,-5148.49,IndianEngineer,Foryou,,Cost
+2020,10,Apartment - Manoj,GAC,01-10-20,-4944,IndianEngineer,Foryou,,Cost
+2020,11,Apartment - Manoj,GAC,01-11-20,-4901.88,IndianEngineer,Foryou,,Cost
+2020,12,Apartment - Manoj,GAC,01-12-20,-4847.8,IndianEngineer,Foryou,,Cost
+2021,1,Apartment - Manoj,GAC,01-01-21,-4874.84,IndianEngineer,Foryou,,Cost
+2020,5,Apartment - Manoj,GE13,01-05-20,-4433.37,IndianEngineer,Foryou,,Cost
+2020,8,Apartment - Manoj,GE13,01-08-20,-666,IndianEngineer,Foryou,,Cost
+2020,5,Apartment - Venu,GE13,01-05-20,-52.33,IndianEngineer,Foryou,,Cost
+2020,7,Apartment - Venu,GE13,01-07-20,-78.55,IndianEngineer,Foryou,,Cost
+2020,8,Apartment - Venu,GE13,01-08-20,-384.75,IndianEngineer,Foryou,,Cost
+2018,12,"Apartment for Dec2018, Jan-Feb2019",GE13,01-12-18,-16875,IndianEngineer,Foryou,M2 Test Phase,Cost
+2018,12,"Apartment for Dec2018, Jan-Feb2019",GE13,01-12-18,-16650,IndianEngineer,Foryou,M2 Test Phase,Cost
+2019,2,Apartment for Mar-Jun2019,GE13,01-02-19,-10500,IndianEngineer,Foryou,M2 Test Phase,Cost
+2019,6,Apartment rental,GE13,01-06-19,-21000,IndianEngineer,Foryou,M2-2 Test Phase,Cost
+2019,11,Apartment Rental - Manoj,GE13,01-11-19,-21000,IndianEngineer,Foryou,VP2 Test Phase,Cost
+2020,1,Apartment Rental - Manoj,GE13,01-01-20,-14000,IndianEngineer,Foryou,TT Test Phase,Cost
+2019,12,Apartment Rental - Venu,FE5AB/6AB,01-12-19,-21000,IndianEngineer,Foryou,VP1 Test Phase,Cost
+2019,9,Apartment renteal&Utility,GE13,01-09-19,-25348.3,IndianEngineer,Foryou,M2-2 Test Phase,Cost
+2020,6,Apartment&Electricity - Venu,GE13,01-06-20,-7063.11,IndianEngineer,Foryou,,Cost
+2020,5,BCM Testing,FE5AB/6AB,01-05-20,-18000,Expense,Foryou,,Cost
+2020,5,BJ Biding,GE13,01-05-20,-3161,Expense,Foryou,,Cost
+2018,12,Cables-Dec2018,GE12B,01-12-18,-30150,Equipment,Foryou,VP2 Test Phase,Cost
+2019,9,CANoe,FE5AB/6AB,01-09-19,-2666.67,Equipment,Jintech,VP1 Test Phase,Cost
+2019,7,CANoe,GE12B,01-07-19,-4000,Equipment,Jintech,TT Test Phase,Cost
+2019,8,CANoe,GE12B,01-08-19,-4000,Equipment,Jintech,SOP +6,Cost
+2019,9,CANoe,GE12B,01-09-19,-2666.67,Equipment,Jintech,SOP +6,Cost
+2019,7,CANoe,GE13,01-07-19,-4000,Equipment,Jintech,M2-2 Test Phase,Cost
+2019,8,CANoe,GE13,01-08-19,-4000,Equipment,Jintech,M2-2 Test Phase,Cost
+2019,9,CANoe,GE13,01-09-19,-2666.67,Equipment,Jintech,M2-2 Test Phase,Cost
+2019,11,CANoe+Canalyzer,FE5AB/6AB,01-11-19,-16297.85,Equipment,Jintech,VP1 Test Phase,Cost
+2019,11,CANoe+Canalyzer,GE13,01-11-19,-16297.85,Equipment,Jintech,VP2 Test Phase,Cost
+2020,7,DESAY MMI Testing Fee,FE5AB/6AB,01-07-20,-60000,Expense,Foryou,,Cost
+2020,8,DESAY MMI Testing Fee,FE5AB/6AB,01-08-20,-65000,Expense,Foryou,,Cost
+2020,4,DF NEV Project,GE13,01-04-20,-18000,Expense,Foryou,,Cost
+2020,5,DF New Energy Project,DFM,01-05-20,-45900,Expense,Foryou,,Cost
+2018,12,Equipment Purchase,GE12B,01-12-18,-10125,Equipment,Foryou,VP2 Test Phase,Cost
+2019,3,Equipment purchase,GE12B,01-03-19,-17883,Equipment,Foryou,VP2 Test Phase,Cost
+2019,3,Equipment purchase,GE13,01-03-19,-17883,Equipment,Foryou,M2 Test Phase,Cost
+2018,12,Equipment rent from ETAS,GE13,01-12-18,-11925,Equipment,Foryou,M2 Test Phase,Cost
+2018,12,Equipment rent from For you,GE12B,01-12-18,-14400,Equipment,Foryou,VP2 Test Phase,Cost
+2019,10,Equipment rental,FE5AB/6AB,01-10-19,-5419.35,Equipment,Jintech,VP1 Test Phase,Cost
+2019,10,Equipment rental,GE12B,01-10-19,-5419.35,Equipment,Jintech,SOP +6,Cost
+2019,10,Equipment rental,GE13,01-10-19,-5419.35,Equipment,Jintech,VP2 Test Phase,Cost
+2019,2,Equipment Rental Feb,GE12B,01-02-19,-33986.5,Equipment,Foryou,VP2 Test Phase,Cost
+2019,1,Equipment Rental Jan,GE13,01-01-19,-23287.5,Equipment,Foryou,M2 Test Phase,Cost
+2020,6,Euiqment rental,FE3AH,01-06-20,-1600,Equipment,Jintech,,Cost
+2020,8,Euiqment rental,FE3AH,01-08-20,-5122.22,Equipment,Foryou,,Cost
+2020,9,Euiqment rental,FE3AH,01-09-20,-1233.33,Equipment,Foryou,,Cost
+2019,9,Euiqment rental,FE5AB/6AB,01-09-19,-13233.33,Equipment,Foryou,VP1 Test Phase,Cost
+2019,10,Euiqment rental,FE5AB/6AB,01-10-19,-15900,Equipment,Foryou,VP1 Test Phase,Cost
+2019,11,Euiqment rental,FE5AB/6AB,01-11-19,-27850,Equipment,Foryou,VP1 Test Phase,Cost
+2019,12,Euiqment rental,FE5AB/6AB,01-12-19,-23850,Equipment,Foryou,VP1 Test Phase,Cost
+2019,12,Euiqment rental,FE5AB/6AB,01-12-19,-7661.29,Equipment,Jintech,VP1 Test Phase,Cost
+2020,1,Euiqment rental,FE5AB/6AB,01-01-20,-19850,Equipment,Foryou,VP1 Test Phase,Cost
+2020,2,Euiqment rental,FE5AB/6AB,01-02-20,-19850,Equipment,Foryou,VP2 Test Phase,Cost
+2020,3,Euiqment rental,FE5AB/6AB,01-03-20,-19850,Equipment,Foryou,VP2 Test Phase,Cost
+2020,3,Euiqment rental,FE5AB/6AB,01-03-20,-2967.74,Equipment,Jintech,VP2 Test Phase,Cost
+2020,4,Euiqment rental,FE5AB/6AB,01-04-20,-21527.42,Equipment,Foryou,,Cost
+2020,4,Euiqment rental,FE5AB/6AB,01-04-20,-6133.33,Equipment,Jintech,,Cost
+2020,5,Euiqment rental,FE5AB/6AB,01-05-20,-23850,Equipment,Foryou,,Cost
+2020,5,Euiqment rental,FE5AB/6AB,01-05-20,-8000.1387,Equipment,Jintech,,Cost
+2020,6,Euiqment rental,FE5AB/6AB,01-06-20,-16850,Equipment,Foryou,,Cost
+2020,6,Euiqment rental,FE5AB/6AB,01-06-20,-1600,Equipment,Jintech,,Cost
+2020,7,Euiqment rental,FE5AB/6AB,01-07-20,-15350,Equipment,Foryou,,Cost
+2020,8,Euiqment rental,FE5AB/6AB,01-08-20,-5122.22,Equipment,Foryou,,Cost
+2020,9,Euiqment rental,FE5AB/6AB,01-09-20,-1233.33,Equipment,Foryou,,Cost
+2020,10,Euiqment rental,FE5AB/6AB,01-10-20,-300,Equipment,Foryou,,Cost
+2020,11,Euiqment rental,FE5AB/6AB,01-11-20,-300,Equipment,Foryou,,Cost
+2019,3,Euiqment rental,GE12B,01-03-19,-21850,Equipment,Foryou,VP2 Test Phase,Cost
+2019,4,Euiqment rental,GE12B,01-04-19,-20887.1,Equipment,Foryou,VP2 Test Phase,Cost
+2019,5,Euiqment rental,GE12B,01-05-19,-21850,Equipment,Foryou,TT Test Phase,Cost
+2019,6,Euiqment rental,GE12B,01-06-19,-18916.67,Equipment,Foryou,TT Test Phase,Cost
+2019,7,Euiqment rental,GE12B,01-07-19,-19850,Equipment,Foryou,TT Test Phase,Cost
+2019,8,Euiqment rental,GE12B,01-08-19,-19850,Equipment,Foryou,SOP +6,Cost
+2019,9,Euiqment rental,GE12B,01-09-19,-13233.33,Equipment,Foryou,SOP +6,Cost
+2019,10,Euiqment rental,GE12B,01-10-19,-15900,Equipment,Foryou,SOP +6,Cost
+2019,3,Euiqment rental,GE13,01-03-19,-21850,Equipment,Foryou,M2 Test Phase,Cost
+2019,4,Euiqment rental,GE13,01-04-19,-20887.1,Equipment,Foryou,M2-2 Test Phase,Cost
+2019,5,Euiqment rental,GE13,01-05-19,-21850,Equipment,Foryou,M2-2 Test Phase,Cost
+2019,6,Euiqment rental,GE13,01-06-19,-18916.67,Equipment,Foryou,M2-2 Test Phase,Cost
+2019,7,Euiqment rental,GE13,01-07-19,-19850,Equipment,Foryou,M2-2 Test Phase,Cost
+2019,8,Euiqment rental,GE13,01-08-19,-19850,Equipment,Foryou,M2-2 Test Phase,Cost
+2019,9,Euiqment rental,GE13,01-09-19,-13233.33,Equipment,Foryou,M2-2 Test Phase,Cost
+2019,10,Euiqment rental,GE13,01-10-19,-15900,Equipment,Foryou,VP2 Test Phase,Cost
+2019,11,Euiqment rental,GE13,01-11-19,-27850,Equipment,Foryou,VP2 Test Phase,Cost
+2019,12,Euiqment rental,GE13,01-12-19,-23850,Equipment,Foryou,TT Test Phase,Cost
+2019,12,Euiqment rental,GE13,01-12-19,-7661.29,Equipment,Jintech,TT Test Phase,Cost
+2020,1,Euiqment rental,GE13,01-01-20,-19850,Equipment,Foryou,TT Test Phase,Cost
+2020,2,Euiqment rental,GE13,01-02-20,-19850,Equipment,Foryou,TT2 Test Phase,Cost
+2020,3,Euiqment rental,GE13,01-03-20,-19850,Equipment,Foryou,TT2 Test Phase,Cost
+2020,3,Euiqment rental,GE13,01-03-20,-2967.74,Equipment,Jintech,TT2 Test Phase,Cost
+2020,4,Euiqment rental,GE13,01-04-20,-21527.42,Equipment,Foryou,,Cost
+2020,4,Euiqment rental,GE13,01-04-20,-6133.33,Equipment,Jintech,,Cost
+2020,5,Euiqment rental,GE13,01-05-20,-23850,Equipment,Foryou,,Cost
+2020,5,Euiqment rental,GE13,01-05-20,-8000.14,Equipment,Jintech,,Cost
+2020,6,Euiqment rental,GE13,01-06-20,-16850,Equipment,Foryou,,Cost
+2020,6,Euiqment rental,GE13,01-06-20,-1600,Equipment,Jintech,,Cost
+2020,7,Euiqment rental,GE13,01-07-20,-15350,Equipment,Foryou,,Cost
+2020,8,Euiqment rental,GE13,01-08-20,-5122.22,Equipment,Foryou,,Cost
+2020,9,Euiqment rental,GE13,01-09-20,-1233.33,Equipment,Foryou,,Cost
+2019,12,Expense on Geely Project,FE5AB/6AB,01-12-19,-35317.74,Expense,Jintech,VP1 Test Phase,Cost
+2019,11,Expense on Geely Projects,GE13,01-11-19,-31427.8,Expense,Jintech,VP2 Test Phase,Cost
+2020,4,FE-3AH Test Case,FE3AH,01-04-20,-46800.48,Expense,Jintech,,Cost
+2020,4,FE-6AB Test Case,FE5AB/6AB,01-04-20,-21599.7,Expense,Jintech,,Cost
+2020,6,Function&Network testing,FE5AB/6AB,01-06-20,-100000,Expense,Foryou,,Cost
+2020,5,Infotainment Testing,FE5AB/6AB,01-05-20,-54000,Expense,Foryou,,Cost
+2019,3,Intern Fee,GE12B,01-03-19,-10784,Expense,Foryou,VP2 Test Phase,Cost
+2019,4,Intern Fee,GE13,01-04-19,-6246.5,Expense,Foryou,M2-2 Test Phase,Cost
+2019,5,Intern Fee,GE13,01-05-19,-9196.5,Expense,Foryou,M2-2 Test Phase,Cost
+2019,2,Intern Fee-Feb,GE13,01-02-19,-4922,Expense,Foryou,M2 Test Phase,Cost
+2019,1,Intern Fee-Jan,GE13,01-01-19,-15637.5,Expense,Foryou,M2 Test Phase,Cost
+2019,7,Internet Fee,GE13,01-07-19,-3500,IndianEngineer,Foryou,M2-2 Test Phase,Cost
+2019,9,Li Xinhui,FE5AB/6AB,01-09-19,-43680,EngineerCost,Cantech,VP1 Test Phase,Cost
+2019,10,Li Xinhui,FE5AB/6AB,01-10-19,-44100,EngineerCost,Cantech,VP1 Test Phase,Cost
+2019,9,Li Xinhui,GE13,01-09-19,-3780,EngineerCost,Cantech,M2-2 Test Phase,Cost
+2020,10,Payment of Brilliance-Renault Project,RBJAC,01-10-20,-330000,Expense,Foryou,,Cost
+2020,11,Payment of Brilliance-Renault Project,RBJAC,01-11-20,-495000,Expense,Foryou,,Cost
+2020,10,Payment of Tsinghua University Project,BJEV,01-10-20,-250000,Expense,Foryou,,Cost
+2019,4,RBEI Offshore Apr2019,GE12B,01-04-19,-40800,RBEIOffshore,RBEI,VP2 Test Phase,Cost
+2019,4,RBEI Offshore Apr2019,GE13,01-04-19,-40800,RBEIOffshore,RBEI,M2-2 Test Phase,Cost
+2018,12,RBEI Offshore Dec2018,GE12B,01-12-18,-64600,RBEIOffshore,RBEI,VP2 Test Phase,Cost
+2018,12,RBEI Offshore Dec2018,GE13,01-12-18,-64600,RBEIOffshore,RBEI,M2 Test Phase,Cost
+2019,2,RBEI Offshore Feb2019,GE12B,01-02-19,-57800,RBEIOffshore,RBEI,VP2 Test Phase,Cost
+2019,2,RBEI Offshore Feb2019,GE13,01-02-19,-57800,RBEIOffshore,RBEI,M2 Test Phase,Cost
+2019,1,RBEI Offshore Jan2019,GE12B,01-01-19,-57800,RBEIOffshore,RBEI,VP2 Test Phase,Cost
+2019,1,RBEI Offshore Jan2019,GE13,01-01-19,-57800,RBEIOffshore,RBEI,M2 Test Phase,Cost
+2019,3,RBEI Offshore Mar2019,GE12B,01-03-19,-44200,RBEIOffshore,RBEI,VP2 Test Phase,Cost
+2019,3,RBEI Offshore Mar2019,GE13,01-03-19,-44200,RBEIOffshore,RBEI,M2 Test Phase,Cost
+2018,11,RBEI Offshore Nov2018,GE12B,01-11-18,-20400,RBEIOffshore,RBEI,VP2 Test Phase,Cost
+2018,11,RBEI Offshore Nov2018,GE13,01-11-18,-20400,RBEIOffshore,RBEI,M2 Test Phase,Cost
+2020,4,RBEI Onsite Apr2019,FE5AB/6AB,01-04-20,-25500,RBEIOnsite,RBEI,VP2 Test Phase,Cost
+2019,4,RBEI Onsite Apr2019,GE12B,01-04-19,-25500,RBEIOnsite,RBEI,VP2 Test Phase,Cost
+2019,4,RBEI Onsite Apr2019,GE13,01-04-19,-25500,RBEIOnsite,RBEI,M2-2 Test Phase,Cost
+2020,4,RBEI Onsite Apr2019,GE13,01-04-20,-25500,RBEIOnsite,RBEI,SOP +6,Cost
+2019,8,RBEI Onsite Aug2019,GE12B,01-08-19,-25500,RBEIOnsite,RBEI,SOP +6,Cost
+2019,8,RBEI Onsite Aug2019,GE13,01-08-19,-25500,RBEIOnsite,RBEI,M2-2 Test Phase,Cost
+2018,12,RBEI Onsite Dec2018,GE12B,01-12-18,-44625,RBEIOnsite,RBEI,VP2 Test Phase,Cost
+2018,12,RBEI Onsite Dec2018,GE13,01-12-18,-44625,RBEIOnsite,RBEI,M2 Test Phase,Cost
+2019,12,RBEI Onsite Dec2019,FE5AB/6AB,01-12-19,-51000,RBEIOnsite,RBEI,VP1 Test Phase,Cost
+2019,12,RBEI Onsite Dec2019,GE13,01-12-19,-51000,RBEIOnsite,RBEI,TT Test Phase,Cost
+2019,2,RBEI Onsite Feb2019,GE12B,01-02-19,-12750,RBEIOnsite,RBEI,VP2 Test Phase,Cost
+2019,2,RBEI Onsite Feb2019,GE13,01-02-19,-12750,RBEIOnsite,RBEI,M2 Test Phase,Cost
+2019,1,RBEI Onsite Jan2019,GE12B,01-01-19,-38250,RBEIOnsite,RBEI,VP2 Test Phase,Cost
+2019,1,RBEI Onsite Jan2019,GE13,01-01-19,-38250,RBEIOnsite,RBEI,M2 Test Phase,Cost
+2020,1,RBEI Onsite Jan2020,FE5AB/6AB,01-01-20,-25500,RBEIOnsite,RBEI,VP1 Test Phase,Cost
+2020,1,RBEI Onsite Jan2020,GE13,01-01-20,-25500,RBEIOnsite,RBEI,TT Test Phase,Cost
+2019,7,RBEI Onsite Jul2019,GE12B,01-07-19,-38250,RBEIOnsite,RBEI,TT Test Phase,Cost
+2019,7,RBEI Onsite Jul2019,GE13,01-07-19,-38250,RBEIOnsite,RBEI,M2-2 Test Phase,Cost
+2019,6,RBEI Onsite Jun2019,GE12B,01-06-19,-6375,RBEIOnsite,RBEI,TT Test Phase,Cost
+2019,6,RBEI Onsite Jun2019,GE13,01-06-19,-6375,RBEIOnsite,RBEI,M2-2 Test Phase,Cost
+2019,3,RBEI Onsite Mar2019,GE12B,01-03-19,-51000,RBEIOnsite,RBEI,VP2 Test Phase,Cost
+2019,3,RBEI Onsite Mar2019,GE13,01-03-19,-51000,RBEIOnsite,RBEI,M2 Test Phase,Cost
+2019,5,RBEI Onsite May2019,GE12B,01-05-19,-38250,RBEIOnsite,RBEI,TT Test Phase,Cost
+2019,5,RBEI Onsite May2019,GE13,01-05-19,-38250,RBEIOnsite,RBEI,M2-2 Test Phase,Cost
+2018,11,RBEI Onsite Nov2018,GE12B,01-11-18,-12750,RBEIOnsite,RBEI,VP2 Test Phase,Cost
+2018,11,RBEI Onsite Nov2018,GE13,01-11-18,-12750,RBEIOnsite,RBEI,M2 Test Phase,Cost
+2019,11,RBEI Onsite Nov2019,FE5AB/6AB,01-11-19,-51000,RBEIOnsite,RBEI,VP1 Test Phase,Cost
+2019,11,RBEI Onsite Nov2019,GE13,01-11-19,-51000,RBEIOnsite,RBEI,VP2 Test Phase,Cost
+2019,10,RBEI Onsite Oct2019,FE5AB/6AB,01-10-19,-34000,RBEIOnsite,RBEI,VP1 Test Phase,Cost
+2019,10,RBEI Onsite Oct2019,GE12B,01-10-19,-34000,RBEIOnsite,RBEI,SOP +6,Cost
+2020,1,代天文/Tianwen Dai,GE13,01-01-20,-29070,EngineerCost,Foryou,TT Test Phase,Cost
+2019,1,博阳/Yang Bo,GE12B,01-01-19,-34537.5,EngineerCost,Foryou,VP2 Test Phase,Cost
+2019,2,博阳/Yang Bo,GE12B,01-02-19,-32400,EngineerCost,Foryou,VP2 Test Phase,Cost
+2019,3,博阳/Yang Bo,GE13,01-03-19,-44550,EngineerCost,Foryou,M2 Test Phase,Cost
+2019,4,博阳/Yang Bo,GE13,01-04-19,-40950,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,5,博阳/Yang Bo,GE13,01-05-19,-27562.5,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2020,4,叶贤辉/Xianhui Ye,FE3AH,01-04-20,-47936.25,EngineerCost,Foryou,,Cost
+2020,5,叶贤辉/Xianhui Ye,FE3AH,01-05-20,-64035,EngineerCost,Foryou,,Cost
+2020,6,叶贤辉/Xianhui Ye,FE3AH,01-06-20,-51176.25,EngineerCost,Foryou,,Cost
+2020,7,叶贤辉/Xianhui Ye,FE3AH,01-07-20,-41512,EngineerCost,Foryou,,Cost
+2021,1,吉利FE-6-A3项目耗材/Geely Project,FE3AH,01-01-21,-38882,Expense,Foryou,,Cost
+2020,7,周梦雪/Mengxue Zhou,FE3AH,01-07-20,-19974.375,EngineerCost,Jintech,,Cost
+2020,8,周梦雪/Mengxue Zhou,FE3AH,01-08-20,-25016.25,EngineerCost,Jintech,,Cost
+2020,9,周梦雪/Mengxue Zhou,FE3AH,01-09-20,-18988.13,EngineerCost,Jintech,,Cost
+2020,10,周梦雪/Mengxue Zhou,FE3AH,01-10-20,-14540.625,EngineerCost,Jintech,,Cost
+2020,12,周梦雪/Mengxue Zhou,FE3AH,01-12-20,-2915.53,EngineerCost,Jintech,,Cost
+2019,7,周梦雪/Mengxue Zhou,GE13,01-07-19,-14400,EngineerCost,Jintech,M2-2 Test Phase,Cost
+2019,8,周梦雪/Mengxue Zhou,GE13,01-08-19,-38362.5,EngineerCost,Jintech,M2-2 Test Phase,Cost
+2019,9,周梦雪/Mengxue Zhou,GE13,01-09-19,-37800,EngineerCost,Jintech,M2-2 Test Phase,Cost
+2019,10,周梦雪/Mengxue Zhou,GE13,01-10-19,-38925,EngineerCost,Jintech,VP2 Test Phase,Cost
+2019,11,周梦雪/Mengxue Zhou,GE13,01-11-19,-51070.175,EngineerCost,Jintech,VP2 Test Phase,Cost
+2019,12,周梦雪/Mengxue Zhou,GE13,01-12-19,-50539.3,EngineerCost,Jintech,TT Test Phase,Cost
+2020,1,周梦雪/Mengxue Zhou,GE13,01-01-20,-26775,EngineerCost,Jintech,TT Test Phase,Cost
+2020,2,周梦雪/Mengxue Zhou,GE13,01-02-20,-29250,EngineerCost,Jintech,TT2 Test Phase,Cost
+2020,3,周梦雪/Mengxue Zhou,GE13,01-03-20,-45899.45,EngineerCost,Jintech,TT2 Test Phase,Cost
+2020,4,周梦雪/Mengxue Zhou,GE13,01-04-20,-53550.42,EngineerCost,Jintech,,Cost
+2020,5,周梦雪/Mengxue Zhou,GE13,01-05-20,-47587.64,EngineerCost,Jintech,,Cost
+2020,6,周梦雪/Mengxue Zhou,GE13,01-06-20,-35662,EngineerCost,Jintech,,Cost
+2020,7,周梦雪/Mengxue Zhou,GE13,01-07-20,-19974.38,EngineerCost,Jintech,,Cost
+2020,8,周梦雪/Mengxue Zhou,GE13,01-08-20,-25016.25,EngineerCost,Jintech,,Cost
+2020,9,周梦雪/Mengxue Zhou,GE13,01-09-20,-18988.125,EngineerCost,Jintech,,Cost
+2020,10,周梦雪/Mengxue Zhou,GE13,01-10-20,-14540.63,EngineerCost,Jintech,,Cost
+2020,11,周梦雪/Mengxue Zhou,GE13,01-11-20,-18354.38,EngineerCost,Jintech,,Cost
+2020,11,周梦雪/Mengxue Zhou,GE13,01-11-20,-18354.375,EngineerCost,Jintech,,Cost
+2020,12,周梦雪/Mengxue Zhou,GE13,01-12-20,-2915.53,EngineerCost,Jintech,,Cost
+2020,8,孙胜龙/Shenglong Sun,HMI,01-08-20,-37800,EngineerCost,Cantech,,Cost
+2020,9,孙胜龙/Shenglong Sun,HMI,01-09-20,-39900,EngineerCost,Cantech,,Cost
+2020,10,孙胜龙/Shenglong Sun,HMI,01-10-20,-31395,EngineerCost,Cantech,,Cost
+2020,11,孙胜龙/Shenglong Sun,HMI,01-11-20,-35280,EngineerCost,Cantech,,Cost
+2020,12,孙胜龙/Shenglong Sun,HMI,01-12-20,-41370,EngineerCost,Cantech,,Cost
+2021,1,孙胜龙/Shenglong Sun,HMI,01-01-21,-36120,EngineerCost,Cantech,,Cost
+2019,2,崔丁太/Dingtai Cui,GE13,01-02-19,-3600,EngineerCost,Foryou,M2 Test Phase,Cost
+2019,3,崔丁太/Dingtai Cui,GE13,01-03-19,-5175,EngineerCost,Foryou,M2 Test Phase,Cost
+2019,4,崔丁太/Dingtai Cui,GE13,01-04-19,-40500,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,5,崔丁太/Dingtai Cui,GE13,01-05-19,-39375,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,6,崔丁太/Dingtai Cui,GE13,01-06-19,-38025,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,7,崔丁太/Dingtai Cui,GE13,01-07-19,-49938.75,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,8,崔丁太/Dingtai Cui,GE13,01-08-19,-47767.5,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,9,崔丁太/Dingtai Cui,GE13,01-09-19,-39060,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,10,崔丁太/Dingtai Cui,GE13,01-10-19,-39903.75,EngineerCost,Foryou,VP2 Test Phase,Cost
+2019,11,崔丁太/Dingtai Cui,GE13,01-11-19,-45720,EngineerCost,Foryou,VP2 Test Phase,Cost
+2019,12,崔丁太/Dingtai Cui,GE13,01-12-19,-43987.5,EngineerCost,Foryou,TT Test Phase,Cost
+2020,1,崔丁太/Dingtai Cui,GE13,01-01-20,-30993.75,EngineerCost,Foryou,TT Test Phase,Cost
+2020,2,崔丁太/Dingtai Cui,GE13,01-02-20,-23625,EngineerCost,Foryou,TT2 Test Phase,Cost
+2020,3,崔丁太/Dingtai Cui,GE13,01-03-20,-52593.75,EngineerCost,Foryou,TT2 Test Phase,Cost
+2020,4,崔丁太/Dingtai Cui,GE13,01-04-20,-49275,EngineerCost,Foryou,,Cost
+2020,5,崔丁太/Dingtai Cui,GE13,01-05-20,-49680,EngineerCost,Foryou,,Cost
+2020,6,崔丁太/Dingtai Cui,GE13,01-06-20,-39228.75,EngineerCost,Foryou,,Cost
+2020,6,张海洋/Haiyang Zhang,FE3AH,01-06-20,-1999.85,EngineerCost,Jintech,,Cost
+2020,7,张海洋/Haiyang Zhang,FE3AH,01-07-20,-3833.33,EngineerCost,Jintech,,Cost
+2020,8,张海洋/Haiyang Zhang,FE3AH,01-08-20,-2750,EngineerCost,Jintech,,Cost
+2020,9,张海洋/Haiyang Zhang,FE3AH,01-09-20,-2187.5,EngineerCost,Jintech,,Cost
+2020,6,张海洋/Haiyang Zhang,FE5AB/6AB,01-06-20,-1999.85,EngineerCost,Jintech,,Cost
+2020,7,张海洋/Haiyang Zhang,FE5AB/6AB,01-07-20,-3833.33,EngineerCost,Jintech,,Cost
+2020,8,张海洋/Haiyang Zhang,FE5AB/6AB,01-08-20,-2750,EngineerCost,Jintech,,Cost
+2020,9,张海洋/Haiyang Zhang,FE5AB/6AB,01-09-20,-2187.5,EngineerCost,Jintech,,Cost
+2020,6,张海洋/Haiyang Zhang,GE13,01-06-20,-1999.8484,EngineerCost,Jintech,,Cost
+2020,7,张海洋/Haiyang Zhang,GE13,01-07-20,-3833.33,EngineerCost,Jintech,,Cost
+2020,8,张海洋/Haiyang Zhang,GE13,01-08-20,-2750,EngineerCost,Jintech,,Cost
+2020,9,张海洋/Haiyang Zhang,GE13,01-09-20,-2187.5,EngineerCost,Jintech,,Cost
+2019,10,张高磊/Gaolei Zhang,FE5AB/6AB,01-10-19,-22680,EngineerCost,Cantech,VP1 Test Phase,Cost
+2019,11,张高磊/Gaolei Zhang,FE5AB/6AB,01-11-19,-51240,EngineerCost,Cantech,VP1 Test Phase,Cost
+2019,12,张高磊/Gaolei Zhang,FE5AB/6AB,01-12-19,-47460,EngineerCost,Cantech,VP1 Test Phase,Cost
+2020,1,张高磊/Gaolei Zhang,FE5AB/6AB,01-01-20,-26250,EngineerCost,Cantech,VP1 Test Phase,Cost
+2020,2,张高磊/Gaolei Zhang,FE5AB/6AB,01-02-20,-28455,EngineerCost,Cantech,VP2 Test Phase,Cost
+2020,3,张高磊/Gaolei Zhang,FE5AB/6AB,01-03-20,-41895,EngineerCost,Cantech,VP2 Test Phase,Cost
+2020,4,张高磊/Gaolei Zhang,FE5AB/6AB,01-04-20,-60690,EngineerCost,Cantech,,Cost
+2020,5,张高磊/Gaolei Zhang,FE5AB/6AB,01-05-20,-60480,EngineerCost,Cantech,,Cost
+2020,6,张高磊/Gaolei Zhang,FE5AB/6AB,01-06-20,-43260,EngineerCost,Cantech,,Cost
+2020,7,张高磊/Gaolei Zhang,FE5AB/6AB,01-07-20,-48825,EngineerCost,Cantech,,Cost
+2020,8,张高磊/Gaolei Zhang,FE5AB/6AB,01-08-20,-52815,EngineerCost,Cantech,,Cost
+2020,9,张高磊/Gaolei Zhang,FE5AB/6AB,01-09-20,-40425,EngineerCost,Cantech,,Cost
+2020,12,张高磊/Gaolei Zhang,FE5AB/6AB,01-12-20,-38430,EngineerCost,Cantech,,Cost
+2021,1,张高磊/Gaolei Zhang,FE5AB/6AB,01-01-21,-24150,EngineerCost,Cantech,,Cost
+2019,2,徐萌萌/Mengmeng Xu,GE12B,01-02-19,-28800,EngineerCost,Foryou,VP2 Test Phase,Cost
+2018,11,徐萌萌/Mengmeng Xu,GE13,01-11-18,-32625,EngineerCost,Foryou,M2 Test Phase,Cost
+2018,12,徐萌萌/Mengmeng Xu,GE13,01-12-18,-32625,EngineerCost,Foryou,M2 Test Phase,Cost
+2019,1,徐萌萌/Mengmeng Xu,GE13,01-01-19,-51300,EngineerCost,Foryou,M2 Test Phase,Cost
+2019,3,徐萌萌/Mengmeng Xu,GE13,01-03-19,-54450,EngineerCost,Foryou,M2 Test Phase,Cost
+2019,4,徐萌萌/Mengmeng Xu,GE13,01-04-19,-37800,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,5,徐萌萌/Mengmeng Xu,GE13,01-05-19,-48937.5,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,6,徐萌萌/Mengmeng Xu,GE13,01-06-19,-39262.5,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,7,徐萌萌/Mengmeng Xu,GE13,01-07-19,-50186.25,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,8,徐萌萌/Mengmeng Xu,GE13,01-08-19,-48633.75,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,9,徐萌萌/Mengmeng Xu,GE13,01-09-19,-42806.25,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,10,徐萌萌/Mengmeng Xu,GE13,01-10-19,-48813.75,EngineerCost,Foryou,VP2 Test Phase,Cost
+2019,11,徐萌萌/Mengmeng Xu,GE13,01-11-19,-55125,EngineerCost,Foryou,VP2 Test Phase,Cost
+2019,12,徐萌萌/Mengmeng Xu,GE13,01-12-19,-47081.25,EngineerCost,Foryou,TT Test Phase,Cost
+2020,1,徐萌萌/Mengmeng Xu,GE13,01-01-20,-29295,EngineerCost,Foryou,TT Test Phase,Cost
+2020,2,徐萌萌/Mengmeng Xu,GE13,01-02-20,-15187.5,EngineerCost,Foryou,TT2 Test Phase,Cost
+2020,3,徐萌萌/Mengmeng Xu,GE13,01-03-20,-50737.5,EngineerCost,Foryou,TT2 Test Phase,Cost
+2020,4,徐萌萌/Mengmeng Xu,GE13,01-04-20,-46698.75,EngineerCost,Foryou,,Cost
+2020,5,徐萌萌/Mengmeng Xu,GE13,01-05-20,-18000,EngineerCost,Foryou,,Cost
+2019,10,文明鑫/Mingxin Wen,FE5AB/6AB,01-10-19,-29193.75,EngineerCost,Foryou,VP1 Test Phase,Cost
+2019,11,文明鑫/Mingxin Wen,FE5AB/6AB,01-11-19,-56733.75,EngineerCost,Foryou,VP1 Test Phase,Cost
+2019,12,文明鑫/Mingxin Wen,FE5AB/6AB,01-12-19,-47823.75,EngineerCost,Foryou,VP1 Test Phase,Cost
+2020,1,文明鑫/Mingxin Wen,FE5AB/6AB,01-01-20,-33052.5,EngineerCost,Foryou,VP1 Test Phase,Cost
+2020,2,文明鑫/Mingxin Wen,FE5AB/6AB,01-02-20,-29925,EngineerCost,Foryou,VP2 Test Phase,Cost
+2020,3,文明鑫/Mingxin Wen,FE5AB/6AB,01-03-20,-52965,EngineerCost,Foryou,VP2 Test Phase,Cost
+2020,4,文明鑫/Mingxin Wen,FE5AB/6AB,01-04-20,-62673.75,EngineerCost,Foryou,,Cost
+2020,5,文明鑫/Mingxin Wen,FE5AB/6AB,01-05-20,-54810,EngineerCost,Foryou,,Cost
+2020,6,文明鑫/Mingxin Wen,FE5AB/6AB,01-06-20,-51165,EngineerCost,Foryou,,Cost
+2020,7,文明鑫/Mingxin Wen,FE5AB/6AB,01-07-20,-56362,EngineerCost,Foryou,,Cost
+2020,8,文明鑫/Mingxin Wen,FE5AB/6AB,01-08-20,-47250,EngineerCost,Foryou,,Cost
+2020,9,文明鑫/Mingxin Wen,FE5AB/6AB,01-09-20,-32962.5,EngineerCost,Foryou,,Cost
+2020,10,文明鑫/Mingxin Wen,FE5AB/6AB,01-10-20,-22387.5,EngineerCost,Foryou,,Cost
+2020,12,文明鑫/Mingxin Wen,GE13,01-12-20,-14070,EngineerCost,Foryou,,Cost
+2020,11,文明鑫/Mingxin Wen,V&V Testing,01-11-20,-29400,EngineerCost,Foryou,,Cost
+2020,12,易晨/Cheng Yi,FE3AH,01-12-20,-26105.63,EngineerCost,Jintech,,Cost
+2021,1,易晨/Cheng Yi,FE3AH,01-01-21,-2786.25,EngineerCost,Jintech,,Cost
+2020,2,易晨/Cheng Yi,FE5AB/6AB,01-02-20,-24300,EngineerCost,Jintech,VP2 Test Phase,Cost
+2020,2,易晨/Cheng Yi,FE5AB/6AB,01-02-20,-6637.5,EngineerCost,Jintech,VP2 Test Phase,Cost
+2020,3,易晨/Cheng Yi,FE5AB/6AB,01-03-20,-54000.61,EngineerCost,Jintech,VP2 Test Phase,Cost
+2020,4,易晨/Cheng Yi,FE5AB/6AB,01-04-20,-57374.85,EngineerCost,Jintech,,Cost
+2020,5,易晨/Cheng Yi,FE5AB/6AB,01-05-20,-51412.06,EngineerCost,Jintech,,Cost
+2020,6,易晨/Cheng Yi,FE5AB/6AB,01-06-20,-48938.18,EngineerCost,Jintech,,Cost
+2020,7,易晨/Cheng Yi,FE5AB/6AB,01-07-20,-46612.5,EngineerCost,Jintech,,Cost
+2020,8,易晨/Cheng Yi,FE5AB/6AB,01-08-20,-49717.5,EngineerCost,Jintech,,Cost
+2020,9,易晨/Cheng Yi,FE5AB/6AB,01-09-20,-38088.75,EngineerCost,Jintech,,Cost
+2020,10,易晨/Cheng Yi,FE5AB/6AB,01-10-20,-35212.5,EngineerCost,Jintech,,Cost
+2020,11,易晨/Cheng Yi,FE5AB/6AB,01-11-20,-38700,EngineerCost,Jintech,,Cost
+2020,12,易晨/Cheng Yi,FE5AB/6AB,01-12-20,-26105.63,EngineerCost,Jintech,,Cost
+2021,1,易晨/Cheng Yi,FE5AB/6AB,01-01-21,-2786.25,EngineerCost,Jintech,,Cost
+2019,10,易晨/Cheng Yi,GE13,01-10-19,-47700,EngineerCost,Jintech,VP2 Test Phase,Cost
+2019,11,易晨/Cheng Yi,GE13,01-11-19,-49159.025,EngineerCost,Jintech,VP2 Test Phase,Cost
+2019,12,易晨/Cheng Yi,GE13,01-12-19,-49583.7,EngineerCost,Jintech,TT Test Phase,Cost
+2020,1,易晨/Cheng Yi,GE13,01-01-20,-23626.1,EngineerCost,Jintech,TT Test Phase,Cost
+2019,5,李艳/Yan Li,GE13,01-05-19,-30600,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,6,李艳/Yan Li,GE13,01-06-19,-42300,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,7,李艳/Yan Li,GE13,01-07-19,-47340,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,8,李艳/Yan Li,GE13,01-08-19,-46901.25,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,9,李艳/Yan Li,GE13,01-09-19,-42693.75,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,10,李艳/Yan Li,GE13,01-10-19,-49927.5,EngineerCost,Foryou,VP2 Test Phase,Cost
+2019,11,李艳/Yan Li,GE13,01-11-19,-50670,EngineerCost,Foryou,VP2 Test Phase,Cost
+2019,12,李艳/Yan Li,GE13,01-12-19,-44977.5,EngineerCost,Foryou,TT Test Phase,Cost
+2020,1,李艳/Yan Li,GE13,01-01-20,-35055,EngineerCost,Foryou,TT Test Phase,Cost
+2020,2,李艳/Yan Li,GE13,01-02-20,-25200,EngineerCost,Foryou,TT2 Test Phase,Cost
+2020,3,李艳/Yan Li,GE13,01-03-20,-51232.5,EngineerCost,Foryou,TT2 Test Phase,Cost
+2020,4,李艳/Yan Li,GE13,01-04-20,-50051.25,EngineerCost,Foryou,,Cost
+2020,5,李艳/Yan Li,GE13,01-05-20,-50670,EngineerCost,Foryou,,Cost
+2020,6,李艳/Yan Li,GE13,01-06-20,-2700,EngineerCost,Foryou,,Cost
+2020,8,李艳/Yan Li,GE13,01-08-20,-1800,EngineerCost,Foryou,,Cost
+2019,5,杨明星/Mingxing Yang,GE13,01-05-19,-11587.5,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,6,杨明星/Mingxing Yang,GE13,01-06-19,-44887.5,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,7,杨明星/Mingxing Yang,GE13,01-07-19,-48948.75,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,8,杨明星/Mingxing Yang,GE13,01-08-19,-44426.25,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,9,杨明星/Mingxing Yang,GE13,01-09-19,-13351.5,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2020,3,杨明星/Mingxing Yang,GE13,01-03-20,-44583.75,EngineerCost,Foryou,TT2 Test Phase,Cost
+2020,4,杨明星/Mingxing Yang,GE13,01-04-20,-55248.75,EngineerCost,Foryou,,Cost
+2020,5,杨明星/Mingxing Yang,GE13,01-05-20,-53145,EngineerCost,Foryou,,Cost
+2020,6,杨明星/Mingxing Yang,GE13,01-06-20,-7200,EngineerCost,Foryou,,Cost
+2020,4,杨波涛/Botao Yang,FE3AH,01-04-20,-24300.27,EngineerCost,Jintech,,Cost
+2020,5,杨波涛/Botao Yang,FE3AH,01-05-20,-24300.27,EngineerCost,Jintech,,Cost
+2020,6,杨波涛/Botao Yang,FE3AH,01-06-20,-21768.75,EngineerCost,Jintech,,Cost
+2020,7,杨波涛/Botao Yang,FE3AH,01-07-20,-25511.25,EngineerCost,Jintech,,Cost
+2020,8,杨波涛/Botao Yang,FE3AH,01-08-20,-19635,EngineerCost,Jintech,,Cost
+2020,9,杨波涛/Botao Yang,FE3AH,01-09-20,-23229.38,EngineerCost,Jintech,,Cost
+2020,10,杨波涛/Botao Yang,FE3AH,01-10-20,-18279.375,EngineerCost,Jintech,,Cost
+2020,11,杨波涛/Botao Yang,FE3AH,01-11-20,-14503.13,EngineerCost,Jintech,,Cost
+2020,12,杨波涛/Botao Yang,FE3AH,01-12-20,-4006.88,EngineerCost,Jintech,,Cost
+2020,3,杨波涛/Botao Yang,FE5AB/6AB,01-03-20,-42862.85,EngineerCost,Jintech,VP2 Test Phase,Cost
+2020,4,杨波涛/Botao Yang,FE5AB/6AB,01-04-20,-24300.27,EngineerCost,Jintech,,Cost
+2020,5,杨波涛/Botao Yang,FE5AB/6AB,01-05-20,-24300.2722,EngineerCost,Jintech,,Cost
+2020,6,杨波涛/Botao Yang,FE5AB/6AB,01-06-20,-21768.75,EngineerCost,Jintech,,Cost
+2020,7,杨波涛/Botao Yang,FE5AB/6AB,01-07-20,-25511.25,EngineerCost,Jintech,,Cost
+2020,8,杨波涛/Botao Yang,FE5AB/6AB,01-08-20,-19635,EngineerCost,Jintech,,Cost
+2020,9,杨波涛/Botao Yang,FE5AB/6AB,01-09-20,-23229.375,EngineerCost,Jintech,,Cost
+2020,10,杨波涛/Botao Yang,FE5AB/6AB,01-10-20,-18279.38,EngineerCost,Jintech,,Cost
+2020,11,杨波涛/Botao Yang,FE5AB/6AB,01-11-20,-14503.125,EngineerCost,Jintech,,Cost
+2020,12,杨波涛/Botao Yang,FE5AB/6AB,01-12-20,-4006.88,EngineerCost,Jintech,,Cost
+2019,7,杨波涛/Botao Yang,GE12B,01-07-19,-48600,EngineerCost,Jintech,TT Test Phase,Cost
+2019,8,杨波涛/Botao Yang,GE12B,01-08-19,-64912.5,EngineerCost,Jintech,SOP +6,Cost
+2019,9,杨波涛/Botao Yang,GE12B,01-09-19,-31387.5,EngineerCost,Jintech,SOP +6,Cost
+2019,10,杨波涛/Botao Yang,GE12B,01-10-19,-41625,EngineerCost,Jintech,SOP +6,Cost
+2019,11,杨波涛/Botao Yang,GE12B,01-11-19,-43637.925,EngineerCost,Jintech,SOP +6,Cost
+2019,12,杨波涛/Botao Yang,GE12B,01-12-19,-35993.3,EngineerCost,Jintech,SOP +6,Cost
+2020,1,杨波涛/Botao Yang,GE13,01-01-20,-22949.9,EngineerCost,Jintech,TT Test Phase,Cost
+2020,2,杨波涛/Botao Yang,GE13,01-02-20,-13500,EngineerCost,Jintech,TT2 Test Phase,Cost
+2019,2,汤元/Yuan Tang,GE12B,01-02-19,-21600,EngineerCost,Foryou,VP2 Test Phase,Cost
+2019,1,汤元/Yuan Tang,GE13,01-01-19,-34560,EngineerCost,Foryou,M2 Test Phase,Cost
+2019,3,汤元/Yuan Tang,GE13,01-03-19,-31680,EngineerCost,Foryou,M2 Test Phase,Cost
+2019,4,汤元/Yuan Tang,GE13,01-04-19,-37800,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,5,汤元/Yuan Tang,GE13,01-05-19,-31590,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,6,汤元/Yuan Tang,GE13,01-06-19,-29160,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,7,汤元/Yuan Tang,GE13,01-07-19,-33813,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,8,汤元/Yuan Tang,GE13,01-08-19,-15840,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2020,4,王嘉伟/Jiawei Wang,FE3AH,01-04-20,-44842.5,EngineerCost,Foryou,,Cost
+2020,5,王嘉伟/Jiawei Wang,FE3AH,01-05-20,-50883.75,EngineerCost,Foryou,,Cost
+2020,6,王嘉伟/Jiawei Wang,FE3AH,01-06-20,-48127.5,EngineerCost,Foryou,,Cost
+2020,7,王嘉伟/Jiawei Wang,FE3AH,01-07-20,-53887.5,EngineerCost,Foryou,,Cost
+2020,8,王嘉伟/Jiawei Wang,FE3AH,01-08-20,-45450,EngineerCost,Foryou,,Cost
+2020,9,王嘉伟/Jiawei Wang,FE3AH,01-09-20,-28687.5,EngineerCost,Foryou,,Cost
+2019,11,王林辉/Linhui Wang,FE5AB/6AB,01-11-19,-20160,EngineerCost,Cantech,VP1 Test Phase,Cost
+2019,12,王林辉/Linhui Wang,FE5AB/6AB,01-12-19,-46200,EngineerCost,Cantech,VP1 Test Phase,Cost
+2020,1,王林辉/Linhui Wang,FE5AB/6AB,01-01-20,-27930,EngineerCost,Cantech,VP1 Test Phase,Cost
+2020,2,王林辉/Linhui Wang,FE5AB/6AB,01-02-20,-17220,EngineerCost,Cantech,VP2 Test Phase,Cost
+2020,3,王林辉/Linhui Wang,FE5AB/6AB,01-03-20,-15172.5,EngineerCost,Cantech,VP2 Test Phase,Cost
+2020,4,王林辉/Linhui Wang,FE5AB/6AB,01-04-20,-25410,EngineerCost,Cantech,,Cost
+2020,5,王林辉/Linhui Wang,FE5AB/6AB,01-05-20,-2835,EngineerCost,Cantech,,Cost
+2020,3,王林辉/Linhui Wang,GE13,01-03-20,-15172.5,EngineerCost,Cantech,TT2 Test Phase,Cost
+2020,4,王林辉/Linhui Wang,GE13,01-04-20,-25410,EngineerCost,Cantech,,Cost
+2020,5,王林辉/Linhui Wang,GE13,01-05-20,-2835,EngineerCost,Cantech,,Cost
+2020,3,王玉龙/Yulong Wang,FE3AH,01-03-20,-34377.75,EngineerCost,Foryou,VP Test Phase,Cost
+2020,4,王玉龙/Yulong Wang,FE3AH,01-04-20,-34411.5,EngineerCost,Foryou,,Cost
+2020,5,王玉龙/Yulong Wang,FE3AH,01-05-20,-37638,EngineerCost,Foryou,,Cost
+2020,6,王玉龙/Yulong Wang,FE3AH,01-06-20,-30692.25,EngineerCost,Foryou,,Cost
+2020,7,王玉龙/Yulong Wang,FE3AH,01-07-20,-35100,EngineerCost,Foryou,,Cost
+2020,8,王玉龙/Yulong Wang,FE3AH,01-08-20,-26550,EngineerCost,Foryou,,Cost
+2020,9,王玉龙/Yulong Wang,FE3AH,01-09-20,-18000,EngineerCost,Foryou,,Cost
+2020,10,王玉龙/Yulong Wang,FE3AH,01-10-20,-14737.5,EngineerCost,Foryou,,Cost
+2020,11,王玉龙/Yulong Wang,FE3AH,01-11-20,-8100,EngineerCost,Foryou,,Cost
+2019,10,王玉龙/Yulong Wang,FE5AB/6AB,01-10-19,-38666.25,EngineerCost,Foryou,VP1 Test Phase,Cost
+2019,11,王玉龙/Yulong Wang,FE5AB/6AB,01-11-19,-52526.25,EngineerCost,Foryou,VP1 Test Phase,Cost
+2019,12,王玉龙/Yulong Wang,FE5AB/6AB,01-12-19,-47576.25,EngineerCost,Foryou,VP1 Test Phase,Cost
+2020,1,王玉龙/Yulong Wang,FE5AB/6AB,01-01-20,-32703.75,EngineerCost,Foryou,VP1 Test Phase,Cost
+2020,2,王玉龙/Yulong Wang,FE5AB/6AB,01-02-20,-29565,EngineerCost,Foryou,VP2 Test Phase,Cost
+2020,3,王玉龙/Yulong Wang,FE5AB/6AB,01-03-20,-22918.5,EngineerCost,Foryou,VP2 Test Phase,Cost
+2020,4,王玉龙/Yulong Wang,FE5AB/6AB,01-04-20,-22941,EngineerCost,Foryou,,Cost
+2020,5,王玉龙/Yulong Wang,FE5AB/6AB,01-05-20,-25092,EngineerCost,Foryou,,Cost
+2020,6,王玉龙/Yulong Wang,FE5AB/6AB,01-06-20,-20461.5,EngineerCost,Foryou,,Cost
+2020,7,王玉龙/Yulong Wang,FE5AB/6AB,01-07-20,-23400,EngineerCost,Foryou,,Cost
+2020,8,王玉龙/Yulong Wang,FE5AB/6AB,01-08-20,-26550,EngineerCost,Foryou,,Cost
+2020,9,王玉龙/Yulong Wang,FE5AB/6AB,01-09-20,-18000,EngineerCost,Foryou,,Cost
+2020,10,王玉龙/Yulong Wang,FE5AB/6AB,01-10-20,-14737.5,EngineerCost,Foryou,,Cost
+2020,11,王玉龙/Yulong Wang,FE5AB/6AB,01-11-20,-8100,EngineerCost,Foryou,,Cost
+2020,11,王玉龙/Yulong Wang,V&V Testing,01-11-20,-9240,EngineerCost,Foryou,,Cost
+2020,12,王玉龙/Yulong Wang,V&V Testing,01-12-20,-35490,EngineerCost,Foryou,,Cost
+2021,1,王玉龙/Yulong Wang,V&V Testing,01-01-21,-36330,EngineerCost,Foryou,,Cost
+2020,6,王科/Kern Wang,DFM,01-06-20,-40680,EngineerCost,Foryou,,Cost
+2020,7,王科/Kern Wang,DFM,01-07-20,-34200,EngineerCost,Foryou,,Cost
+2020,8,王科/Kern Wang,DFM,01-08-20,-35437.5,EngineerCost,Foryou,,Cost
+2020,9,王科/Kern Wang,DFM,01-09-20,-55800,EngineerCost,Foryou,,Cost
+2020,10,王科/Kern Wang,DFM,01-10-20,-44437.5,EngineerCost,Foryou,,Cost
+2020,11,王科/Kern Wang,DFM,01-11-20,-61762.5,EngineerCost,Foryou,,Cost
+2020,12,王科/Kern Wang,DFM,01-12-20,-59062,EngineerCost,Foryou,,Cost
+2021,1,王科/Kern Wang,DFM,01-01-21,-32625,EngineerCost,Foryou,,Cost
+2019,10,范国栋/Guodong Fan,FE5AB/6AB,01-10-19,-42502.5,EngineerCost,Foryou,VP1 Test Phase,Cost
+2019,11,范国栋/Guodong Fan,FE5AB/6AB,01-11-19,-55710,EngineerCost,Foryou,VP1 Test Phase,Cost
+2019,12,范国栋/Guodong Fan,FE5AB/6AB,01-12-19,-45596.25,EngineerCost,Foryou,VP1 Test Phase,Cost
+2020,1,范国栋/Guodong Fan,FE5AB/6AB,01-01-20,-34998.75,EngineerCost,Foryou,VP1 Test Phase,Cost
+2020,2,范国栋/Guodong Fan,FE5AB/6AB,01-02-20,-26775,EngineerCost,Foryou,VP2 Test Phase,Cost
+2020,3,范国栋/Guodong Fan,FE5AB/6AB,01-03-20,-53460,EngineerCost,Foryou,VP2 Test Phase,Cost
+2020,4,范国栋/Guodong Fan,FE5AB/6AB,01-04-20,-52773.75,EngineerCost,Foryou,,Cost
+2020,5,范国栋/Guodong Fan,FE5AB/6AB,01-05-20,-47328.75,EngineerCost,Foryou,,Cost
+2020,6,范国栋/Guodong Fan,FE5AB/6AB,01-06-20,-48870,EngineerCost,Foryou,,Cost
+2020,7,范国栋/Guodong Fan,FE5AB/6AB,01-07-20,-49275,EngineerCost,Foryou,,Cost
+2020,8,范国栋/Guodong Fan,FE5AB/6AB,01-08-20,-42750,EngineerCost,Foryou,,Cost
+2020,9,范国栋/Guodong Fan,FE5AB/6AB,01-09-20,-23850,EngineerCost,Foryou,,Cost
+2020,10,范国栋/Guodong Fan,FE5AB/6AB,01-10-20,-32850,EngineerCost,Foryou,,Cost
+2020,11,范国栋/Guodong Fan,FE5AB/6AB,01-11-20,-30600,EngineerCost,Foryou,,Cost
+2019,9,范国栋/Guodong Fan,GE13,01-09-19,-14850,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2020,6,蔡乙男/Yinan Cai,DFM,01-06-20,-43425,EngineerCost,Foryou,,Cost
+2020,7,蔡乙男/Yinan Cai,DFM,01-07-20,-23400,EngineerCost,Foryou,,Cost
+2020,8,蔡乙男/Yinan Cai,DFM,01-08-20,-15412.5,EngineerCost,Foryou,,Cost
+2020,9,蔡乙男/Yinan Cai,DFM,01-09-20,-1687.5,EngineerCost,Foryou,,Cost
+2020,10,蔡乙男/Yinan Cai,DFM,01-10-20,0,EngineerCost,Foryou,,Cost
+2020,11,蔡乙男/Yinan Cai,DFM,01-11-20,-21487.5,EngineerCost,Foryou,,Cost
+2020,12,蔡乙男/Yinan Cai,DFM,01-12-20,-42525,EngineerCost,Foryou,,Cost
+2021,1,蔡乙男/Yinan Cai,DFM,01-01-21,-11587.5,EngineerCost,Foryou,,Cost
+2019,5,谢厚德/Houde Xie,GE13,01-05-19,-18000,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,6,谢厚德/Houde Xie,GE13,01-06-19,-23400,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2020,8,赵洪飞/Hongfei Zhao,FE3AH,01-08-20,-36787.5,EngineerCost,Foryou,,Cost
+2020,9,赵洪飞/Hongfei Zhao,FE3AH,01-09-20,-39600,EngineerCost,Foryou,,Cost
+2020,10,赵洪飞/Hongfei Zhao,FE3AH,01-10-20,-33975,EngineerCost,Foryou,,Cost
+2020,11,赵洪飞/Hongfei Zhao,FE3AH,01-11-20,-37800,EngineerCost,Foryou,,Cost
+2020,12,赵洪飞/Hongfei Zhao,FE3AH,01-12-20,-7200,EngineerCost,Foryou,,Cost
+2019,10,赵洪飞/Hongfei Zhao,GE13,01-10-19,-37800,EngineerCost,Foryou,VP2 Test Phase,Cost
+2019,11,赵洪飞/Hongfei Zhao,GE13,01-11-19,-48937.5,EngineerCost,Foryou,VP2 Test Phase,Cost
+2019,12,赵洪飞/Hongfei Zhao,GE13,01-12-19,-45967.5,EngineerCost,Foryou,TT Test Phase,Cost
+2020,1,赵洪飞/Hongfei Zhao,GE13,01-01-20,-28800,EngineerCost,Foryou,TT Test Phase,Cost
+2020,2,赵洪飞/Hongfei Zhao,GE13,01-02-20,-21150,EngineerCost,Foryou,TT2 Test Phase,Cost
+2020,3,赵洪飞/Hongfei Zhao,GE13,01-03-20,-51356.25,EngineerCost,Foryou,TT2 Test Phase,Cost
+2020,4,赵洪飞/Hongfei Zhao,GE13,01-04-20,-52402.5,EngineerCost,Foryou,,Cost
+2020,5,赵洪飞/Hongfei Zhao,GE13,01-05-20,-43616.25,EngineerCost,Foryou,,Cost
+2020,6,赵洪飞/Hongfei Zhao,GE13,01-06-20,-47823.75,EngineerCost,Foryou,,Cost
+2020,7,赵洪飞/Hongfei Zhao,GE13,01-07-20,-44775,EngineerCost,Foryou,,Cost
+2019,10,陈乾/Qian Chen,FE5AB/6AB,01-10-19,-19125,EngineerCost,Jintech,VP1 Test Phase,Cost
+2019,11,陈乾/Qian Chen,FE5AB/6AB,01-11-19,-46292.3,EngineerCost,Jintech,VP1 Test Phase,Cost
+2019,12,陈乾/Qian Chen,FE5AB/6AB,01-12-19,-47723.7,EngineerCost,Jintech,VP1 Test Phase,Cost
+2020,1,陈乾/Qian Chen,FE5AB/6AB,01-01-20,-23850,EngineerCost,Jintech,VP1 Test Phase,Cost
+2020,2,陈乾/Qian Chen,FE5AB/6AB,01-02-20,0,EngineerCost,Jintech,VP2 Test Phase,Cost
+2020,3,陈乾/Qian Chen,FE5AB/6AB,01-03-20,-52650.26,EngineerCost,Jintech,VP2 Test Phase,Cost
+2020,4,陈乾/Qian Chen,FE5AB/6AB,01-04-20,-54112.14,EngineerCost,Jintech,,Cost
+2020,5,陈乾/Qian Chen,FE5AB/6AB,01-05-20,-49274.95,EngineerCost,Jintech,,Cost
+2020,6,陈乾/Qian Chen,FE5AB/6AB,01-06-20,-42862.5,EngineerCost,Jintech,,Cost
+2020,11,陈乾/Qian Chen,FE5AB/6AB,01-11-20,-3789.54,EngineerCost,Jintech,,Cost
+2020,4,陈威迪/Weidi Chen,FE3AH,01-04-20,-41511.76,EngineerCost,Jintech,,Cost
+2020,5,陈威迪/Weidi Chen,FE3AH,01-05-20,-52200.96,EngineerCost,Jintech,,Cost
+2020,6,陈威迪/Weidi Chen,FE3AH,01-06-20,-41850,EngineerCost,Jintech,,Cost
+2020,7,陈威迪/Weidi Chen,FE3AH,01-07-20,-40207.5,EngineerCost,Jintech,,Cost
+2019,2,陈康康/Kangkang Chen,GE12B,01-02-19,-23175,EngineerCost,Foryou,VP2 Test Phase,Cost
+2019,3,陈康康/Kangkang Chen,GE12B,01-03-19,-36000,EngineerCost,Foryou,VP2 Test Phase,Cost
+2019,4,陈康康/Kangkang Chen,GE12B,01-04-19,-29340,EngineerCost,Foryou,VP2 Test Phase,Cost
+2018,11,陈康康/Kangkang Chen,GE13,01-11-18,-17500,EngineerCost,Foryou,M2 Test Phase,Cost
+2018,12,陈康康/Kangkang Chen,GE13,01-12-18,-17500,EngineerCost,Foryou,M2 Test Phase,Cost
+2019,1,陈康康/Kangkang Chen,GE13,01-01-19,-48375,EngineerCost,Foryou,M2 Test Phase,Cost
+2019,5,陈康康/Kangkang Chen,GE13,01-05-19,-43312.5,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2019,6,陈康康/Kangkang Chen,GE13,01-06-19,-32850,EngineerCost,Foryou,M2-2 Test Phase,Cost
+2020,10,陈洽/Qia Chen,AE Testing,01-10-20,-59535,EngineerCost,Cantech,,Cost
+2020,12,陈洽/Qia Chen,AE Testing,01-12-20,-36120,EngineerCost,Cantech,,Cost
+2021,1,陈洽/Qia Chen,AE Testing,01-01-21,-27930,EngineerCost,Cantech,,Cost
+2020,11,陈洽/Qia Chen,DFM,01-11-20,-40110,EngineerCost,Cantech,,Cost
+2018,11,陈洽/Qia Chen,GE13,01-11-18,-15750,EngineerCost,Cantech,M2 Test Phase,Cost
+2018,12,陈洽/Qia Chen,GE13,01-12-18,-15750,EngineerCost,Cantech,M2 Test Phase,Cost
+2019,1,陈洽/Qia Chen,GE13,01-01-19,-53550,EngineerCost,Cantech,M2 Test Phase,Cost
+2019,2,陈洽/Qia Chen,GE13,01-02-19,-28125,EngineerCost,Cantech,M2 Test Phase,Cost
+2019,3,陈洽/Qia Chen,GE13,01-03-19,-42075,EngineerCost,Cantech,M2 Test Phase,Cost
+2019,4,陈洽/Qia Chen,GE13,01-04-19,-33750,EngineerCost,Cantech,M2-2 Test Phase,Cost
+2019,5,陈洽/Qia Chen,GE13,01-05-19,-37350,EngineerCost,Cantech,M2-2 Test Phase,Cost
+2019,6,陈洽/Qia Chen,GE13,01-06-19,-38362.5,EngineerCost,Cantech,M2-2 Test Phase,Cost
+2019,7,陈洽/Qia Chen,GE13,01-07-19,-43998.75,EngineerCost,Cantech,M2-2 Test Phase,Cost
+2019,8,陈洽/Qia Chen,GE13,01-08-19,-39600,EngineerCost,Cantech,M2-2 Test Phase,Cost
+2019,9,陈洽/Qia Chen,GE13,01-09-19,-37237.5,EngineerCost,Cantech,M2-2 Test Phase,Cost
+2019,10,陈洽/Qia Chen,GE13,01-10-19,-39093.75,EngineerCost,Cantech,VP2 Test Phase,Cost
+2019,11,陈洽/Qia Chen,GE13,01-11-19,-43987.5,EngineerCost,Cantech,VP2 Test Phase,Cost
+2019,12,陈洽/Qia Chen,GE13,01-12-19,-45348.75,EngineerCost,Cantech,TT Test Phase,Cost
+2020,1,陈洽/Qia Chen,GE13,01-01-20,-28057.5,EngineerCost,Cantech,TT Test Phase,Cost
+2020,2,陈洽/Qia Chen,GE13,01-02-20,-22702.5,EngineerCost,Cantech,TT2 Test Phase,Cost
+2020,3,陈洽/Qia Chen,GE13,01-03-20,-52098.75,EngineerCost,Cantech,TT2 Test Phase,Cost
+2020,4,陈洽/Qia Chen,GE13,01-04-20,-45607.5,EngineerCost,Cantech,,Cost
+2020,5,陈洽/Qia Chen,GE13,01-05-20,-44741.25,EngineerCost,Cantech,,Cost
+2020,6,陈洽/Qia Chen,GE13,01-06-20,-41861.25,EngineerCost,Cantech,,Cost
+2020,7,陈洽/Qia Chen,GE13,01-07-20,-14850,EngineerCost,Cantech,,Cost
+2020,8,陈洽/Qia Chen,GE13,01-08-20,-14850,EngineerCost,Cantech,,Cost
+2020,9,陈洽/Qia Chen,GE13,01-09-20,-2700,EngineerCost,Cantech,,Cost
+2019,8,陶文强/Wenqiang Tao,BYD,01-08-19,-9000,EngineerCost,Jintech,Prepayment,Cost
+2019,9,陶文强/Wenqiang Tao,BYD,01-09-19,-48375,EngineerCost,Jintech,Prepayment,Cost
+2019,10,陶文强/Wenqiang Tao,BYD,01-10-19,-40950,EngineerCost,Jintech,Prepayment,Cost
+2019,11,陶文强/Wenqiang Tao,BYD,01-11-19,-46186.125,EngineerCost,Jintech,1st Phase,Cost
+2019,12,陶文强/Wenqiang Tao,BYD,01-12-19,-47276.6,EngineerCost,Jintech,1st Phase,Cost
+2020,1,陶文强/Wenqiang Tao,BYD,01-01-20,-28325.7,EngineerCost,Jintech,1st Phase,Cost
+2020,2,陶文强/Wenqiang Tao,BYD,01-02-20,-7152.96,EngineerCost,Jintech,1st Phase,Cost
+2020,3,陶文强/Wenqiang Tao,BYD,01-03-20,-19800.29,EngineerCost,Jintech,1st Phase,Cost
+2020,4,陶文强/Wenqiang Tao,BYD,01-04-20,-39600.57,EngineerCost,Jintech,,Cost
+2020,5,陶文强/Wenqiang Tao,BYD,01-05-20,-30599.02,EngineerCost,Jintech,,Cost
+2020,6,陶文强/Wenqiang Tao,BYD,01-06-20,-30599.02,EngineerCost,Jintech,,Cost
+2020,7,陶文强/Wenqiang Tao,BYD,01-07-20,-52068.75,EngineerCost,Jintech,,Cost
+2020,8,陶文强/Wenqiang Tao,BYD,01-08-20,-47280,EngineerCost,Jintech,,Cost
+2020,9,陶文强/Wenqiang Tao,BYD,01-09-20,-19140,EngineerCost,Jintech,,Cost
+2020,4,韩松松/Songsong Han,FE3AH,01-04-20,-32624.2,EngineerCost,Jintech,,Cost
+2020,5,韩松松/Songsong Han,FE3AH,01-05-20,-51749.43,EngineerCost,Jintech,,Cost
+2020,6,韩松松/Songsong Han,FE3AH,01-06-20,-45000,EngineerCost,Jintech,,Cost
+2020,7,韩松松/Songsong Han,FE3AH,01-07-20,-48000,EngineerCost,Jintech,,Cost
+2020,8,韩松松/Songsong Han,FE3AH,01-08-20,-46316.25,EngineerCost,Jintech,,Cost
+2020,9,韩松松/Songsong Han,FE3AH,01-09-20,-14936.25,EngineerCost,Jintech,,Cost
+2020,3,韩译萱/Yixuan Han,GE13,01-03-20,-44549.53,EngineerCost,Jintech,TT2 Test Phase,Cost
+2020,4,韩译萱/Yixuan Han,GE13,01-04-20,-52312.73,EngineerCost,Jintech,,Cost
+2020,5,韩译萱/Yixuan Han,GE13,01-05-20,-42075.05,EngineerCost,Jintech,,Cost
+2020,6,韩译萱/Yixuan Han,GE13,01-06-20,-9000,EngineerCost,Jintech,,Cost
+2019,12,韩译萱/Yixuan Han,HMI,01-12-19,-25370.7,EngineerCost,Jintech,Undefined,Cost
+2020,1,韩译萱/Yixuan Han,HMI,01-01-20,-19800,EngineerCost,Jintech,Undefined,Cost
+2020,2,韩译萱/Yixuan Han,HMI,01-02-20,-28611.84,EngineerCost,Jintech,Undefined,Cost
+2020,6,黄翔/Xiang Huang,GE13,01-06-20,-999.18,EngineerCost,Jintech,,Cost
+2020,7,黄翔/Xiang Huang,GE13,01-07-20,-18000,EngineerCost,Jintech,,Cost
+2020,8,黄翔/Xiang Huang,GE13,01-08-20,-12125,EngineerCost,Jintech,,Cost

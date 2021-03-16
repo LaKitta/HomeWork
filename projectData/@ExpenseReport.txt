@@ -1,0 +1,41 @@
+dashboard url => http://api.labnow.ml:6005/r/4
+login: admin password: admin
+
+<!-- DBA Command -->
+connect to postgresql from localhost <= ubuntu-server
+> psql -h 127.0.0.1 -p 5432 -U superset
+
+connect to postgresql from remnote
+> // port forwarding nginx || ssh
+> ssh -L localhost:5432:localhost:5432 xxx@ubuntu-server
+> psql/pgAdmin => localhost:5432
+
+<!-- Config -->
+Datasource server:superset/db:superset/schema:public/table:expense, table:revenue
+<!-- SQL Query -->
+CREATE TABLE projectRevenue (
+	project varchar(255),
+	phase varchar(255),
+	billDate date,
+	revenue double precision
+);
+CREATE TABLE projectExpense (
+	item varchar(255),
+	project varchar(255),
+	billDate date,
+	expense double precision,
+	category varchar(255),
+	partner varchar(255),	
+	phase varchar(255)
+);
+SELECT project AS project, sum(expense) AS "SUM(expense)", sum(revenue) AS "SUM(revenue)", sum(revenue) - sum(expense) AS  profit
+FROM (
+  SELECT project as project, expense AS expense, 0 AS revenue FROM public.projectexpense
+  UNION
+  SELECT project as project, 0 AS expense, revenue*1.06 AS revenue FROM public.projectrevenue
+  ) AS foo
+GROUP BY project;
+
+<!-- Operation logs -->
+Create user 12345 grant role Gamma
+Add "access_all_database" right to Gamma

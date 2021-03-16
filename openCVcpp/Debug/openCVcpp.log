@@ -1,0 +1,8 @@
+﻿  openCVcpp.cpp
+C:\Users\Gang\Documents\GitHub\playground\openCVcpp\openCVcpp.cpp(11,25): warning C4129: 'G': unrecognized character escape sequence
+C:\Users\Gang\Documents\GitHub\playground\openCVcpp\openCVcpp.cpp(11,25): warning C4129: 'D': unrecognized character escape sequence
+C:\Users\Gang\Documents\GitHub\playground\openCVcpp\openCVcpp.cpp(11,25): warning C4129: 'p': unrecognized character escape sequence
+C:\Users\Gang\Documents\GitHub\playground\openCVcpp\openCVcpp.cpp(11,25): warning C4129: 'o': unrecognized character escape sequence
+C:\Users\Gang\Documents\GitHub\playground\openCVcpp\openCVcpp.cpp(11,25): warning C4129: 'm': unrecognized character escape sequence
+C:\Users\Gang\Documents\GitHub\playground\openCVcpp\openCVcpp.cpp(11,25): warning C4129: 'c': unrecognized character escape sequence
+opencv_world450d.lib(opencv_world450d.dll) : fatal error LNK1112: module machine type 'x64' conflicts with target machine type 'x86'
